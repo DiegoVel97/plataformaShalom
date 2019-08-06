@@ -1594,6 +1594,75 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
 
             /* INSERCION TABLA FORMULARIO DOCUMENTACION ALUMNO */
 
+            $fotocopia_historial_clinico = $_FILES['fotocopia_historial_clinico']['name'];
+            $fotocopia_informe_avances_terapeuticos = $_FILES['fotocopia_informe_avances']['name'];
+            $fotocopia_fonoaudiologia = $_FILES['fotocopia_fonoaudiologia']['name'];
+            $fotocopia_examen_psicologia = $_FILES['fotocopia_examen_psicologia']['name'];
+            $fotocopia_terapia_ocupacional = $_FILES['fotocopia_terapia']['name'];
+            $evaluacion_neurosicologica = $_FILES['evaluacion_neurosicologica']['name'];
+            $otro_documento = $_FILES['otro_documentos_inclusion']['name'];
+            
+            if(!isset($_FILES['carta_laboral_padre_alumno']) or $_FILES['carta_laboral_padre_alumno'] == ""){
+                $carta_laboral_padre = "No registra";
+            }else{
+                $carta_laboral_padre = $_FILES['carta_laboral_padre_alumno']['name'];
+            }
+
+            if(!isset($_FILES['carta_laboral_madre_alumno']) or $_FILES['carta_laboral_madre_alumno'] == ""){
+                $carta_laboral_madre = "No registra";
+            }else{
+                $carta_laboral_padre = $_FILES['carta_laboral_madre_alumno']['name'];
+            } 
+
+
+            $recibo_publico_alumno = $_FILES['recibo_publico_alumno'];
+            $estado = "activo";
+
+            $sql_documentos = "INSERT INTO documentacion (
+                                    fotocopia_ultimo_informe_academico,
+                                    certificado_ultimo_grado,
+                                    fotocopia_informe_convivencia,
+                                    fotocopia_paz_y_salvo,
+                                    comprobante_pago_solicitud,
+                                    registro_civil,
+                                    tarjeta_identidad,
+                                    carnet_vacunacion,
+                                    carnet_eps,
+                                    certificado_medico,
+                                    certificado_visual,
+                                    certificado_auditivo,
+                                    cedula_padre,
+                                    cedula_madre,
+                                    carta_laboral_padre,
+                                    carta_laboral_madre,
+                                    recibo_publico,
+                                    estado_documento) 
+                                    VALUES(
+                                    '$fotocopia_informe_academico_alumno',
+                                    '$certificado_original_grado_alumno',
+                                    '$fotocopia_convivencia_alumno',
+                                    '$fotocopia_paz_y_salvo_alumno',
+                                    '$comprobante_pago_alumno',
+                                    '$registro_civil_alumno',
+                                    '$tarjeta_de_identidad_alumno',
+                                    '$carnet_vacunacion_alumno',
+                                    '$fotocopia_carnet_eps_alumno',
+                                    '$certificado_medico',
+                                    '$certificado_visual',
+                                    '$certificado_auditivo',
+                                    '$cedula_padre_alumno',
+                                    '$cedula_madre_alumno',
+                                    '$carta_laboral_padre',
+                                    '$carta_laboral_madre',
+                                    '$recibo_publico_alumno',
+                                    '$estado')";
+            $insercion_documento = $objMatricula->insertar($sql_documentos);
+
+
+            $sql = "SELECT * FROM documentacion ORDER BY id_documento ASC";
+                $consulta = $objMatricula->find($sql);
+                $id_documento_alumno = $consulta[0];
+
 
             /*  FIN INSERCION TABLA FORMULARIO DOCUMENTACION ALUMNO */
 
