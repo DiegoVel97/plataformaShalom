@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulos>
+
+    <nombre>Matricula</nombre>
+    <icono>mdi-action-assignment</icono>
+    <sitioMenu>principal</sitioMenu>
+    <descripcion>Modulo Matriculas</descripcion>
+   
+    <controladores>
+        <controlador>
+            <nombre>formularioController</nombre>
+            <icono>mdi-editor-format-align-justify</icono>
+            <display>Formulario</display>
+            <descripcion>Renovacion</descripcion>
+            
+            <funciones>
+                
+                <funcion>
+                    <nombre>listadoSolicitud</nombre>
+                    <display>Solicitud</display>
+                    <descripcion>Listado formulario de renovacion</descripcion>
+                </funcion>
+                <funcion>
+                    <nombre>listadoRenovacion</nombre>
+                    <display>Renovacion</display>
+                    <descripcion>Listado formulario de renovacion</descripcion>
+                </funcion>
+
+            </funciones>
+        </controlador>
+        
+    </controladores>
+</modulos>
