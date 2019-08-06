@@ -1516,20 +1516,20 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
 
             /* INSERCION TABLA DOCUMENTACION */
 
-$fotocopia_informe_academico_alumno = $_FILES['fotocopia_informe_academico_alumno'];
-$certificado_original_grado_alumno = $_FILES['certificado_original_grado_alumno'];
-$fotocopia_convivencia_alumno = $_FILES['fotocopia_convivencia_alumno'];
-$fotocopia_paz_y_salvo_alumno = $_FILES['fotocopia_paz_y_salvo_alumno'];
-$comprobante_pago_alumno = $_FILES['comprobante_pago_alumno'];
-$registro_civil_alumno = $_FILES['registro_civil_alumno'];
-$tarjeta_de_identidad_alumno = $_FILES['tarjeta_de_identidad_alumno'];
-$carnet_vacunacion_alumno = $_FILES['carnet_vacunacion_alumno'];
-$fotocopia_carnet_eps_alumno = $_FILES['fotocopia_carnet_eps_alumno'];
-$certificado_medico = "No regista";            
-$certificado_visual = "No registra";
-$certificado_auditivo = "No registra";
-$cedula_padre_alumno = $_FILES['cedula_padre_alumno'];
-$cedula_madre_alumno = $_FILES['cedula_madre_alumno'];
+            $fotocopia_informe_academico_alumno = $_FILES['fotocopia_informe_academico_alumno']['name'];
+            $certificado_original_grado_alumno = $_FILES['certificado_original_grado_alumno']['name'];
+            $fotocopia_convivencia_alumno = $_FILES['fotocopia_convivencia_alumno']['name'];
+            $fotocopia_paz_y_salvo_alumno = $_FILES['fotocopia_paz_y_salvo_alumno']['name'];
+            $comprobante_pago_alumno = $_FILES['comprobante_pago_alumno']['name'];
+            $registro_civil_alumno = $_FILES['registro_civil_alumno']['name'];
+            $tarjeta_de_identidad_alumno = $_FILES['tarjeta_de_identidad_alumno']['name'];
+            $carnet_vacunacion_alumno = $_FILES['carnet_vacunacion_alumno']['name'];
+            $fotocopia_carnet_eps_alumno = $_FILES['fotocopia_carnet_eps_alumno']['name'];
+            $certificado_medico = "No regista";            
+            $certificado_visual = "No registra";
+            $certificado_auditivo = "No registra";
+            $cedula_padre_alumno = $_FILES['cedula_padre_alumno']['name'];
+            $cedula_madre_alumno = $_FILES['cedula_madre_alumno']['name'];
             
             if(!isset($_FILES['carta_laboral_padre_alumno']) or $_FILES['carta_laboral_padre_alumno'] == ""){
                 $carta_laboral_padre = "No registra";
@@ -1544,8 +1544,8 @@ $cedula_madre_alumno = $_FILES['cedula_madre_alumno'];
             } 
 
 
-$recibo_publico_alumno = $_FILES['recibo_publico_alumno'];
-$estado = "activo";
+            $recibo_publico_alumno = $_FILES['recibo_publico_alumno'];
+            $estado = "activo";
 
             $sql_documentos = "INSERT INTO documentacion (
                                     fotocopia_ultimo_informe_academico,
@@ -1592,6 +1592,10 @@ $estado = "activo";
                 $consulta = $objMatricula->find($sql);
                 $id_documento_alumno = $consulta[0];
 
+            /* INSERCION TABLA FORMULARIO DOCUMENTACION ALUMNO */
+
+
+            /*  FIN INSERCION TABLA FORMULARIO DOCUMENTACION ALUMNO */
 
 
 
