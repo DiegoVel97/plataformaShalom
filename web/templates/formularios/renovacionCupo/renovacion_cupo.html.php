@@ -129,7 +129,8 @@
 							<label for="">Segundo apellido</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="" type="date" name="fecha_nacimiento"><br>
+							  <input type="text" class="datepicker">
+
 							<label for="">Fecha de nacimiento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
