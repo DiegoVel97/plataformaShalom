@@ -943,6 +943,8 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
 		
 	}
 
+
+
     function solicitud(){
         
 
@@ -1130,8 +1132,8 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
             $errores[] = "El campo <code><b>tipo_documento_masculino</b></code> no puede queda vacio";
         }
 
-        if(!isset($_POST['numero_celular_masculino']) or $_POST['numero_celular_masculino'] == ""){
-            $errores[] = "El campo <code><b>numero_celular_masculino</b></code> no puede queda vacio";
+        if(!isset($_POST['numero_id_masculino']) or $_POST['numero_id_masculino'] == ""){
+            $errores[] = "El campo <code><b>Cedula</b></code> no puede queda vacio";
         }
 
         if(!isset($_POST['direccion_residencia_masculino']) or $_POST['direccion_residencia_masculino'] == ""){
@@ -1487,21 +1489,27 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
           /* ================================================================================================================= INICIO SI ERES INDEPENDIENTE
          ================================================================================================================= */
 
-        if(!isset($_FILES['declaracion_renta']) or $_FILES['declaracion_renta'] == ""){
-            $errores[] = "El archivo <code>declaracion de renta</code> de la secci&oacute;n ERES INDEPENDIENTE, se encuentra vacio, llenalo.";
-        } 
+       if(isset($_POST['seleccionIndependiente']) AND $_POST['seleccionIndependiente'] == "1"){
 
-        if(!isset($_FILES['certificado_ingreso_avalado']) or $_FILES['certificado_ingreso_avalado'] == ""){
-            $errores[] = "El archivo <code>certificado ingreso</code> de la secci&oacute;n ERES INDEPENDIENTE, se encuentra vacio, llenalo.";
-        } 
+                if(!isset($_FILES['declaracion_renta']) or $_FILES['declaracion_renta'] == ""){
+                    $errores[] = "El archivo <code>declaracion renta</code> son importantes, verifica y subelos";
+                }
 
-        if(!isset($_FILES['tarjeta_profesional']) or $_FILES['tarjeta_profesional'] == ""){
-            $errores[] = "El archivo <code>tarjeta profesional</code> de la secci&oacute;n ERES INDEPENDIENTE, se encuentra vacio, llenalo.";
-        } 
+                if(!isset($_FILES['certificado_ingreso_avalado']) or $_FILES['certificado_ingreso_avalado'] == ""){
+                    $errores[] = "El archivo <code>certificado avalado por el contador</code> son importantes, verifica y subelos";
+                }
 
-        if(!isset($_FILES['antecedentes_disciplinarios']) or $_FILES['antecedentes_disciplinarios'] == ""){
-            $errores[] = "El archivo <code>antecedentes disciplinarios</code> de la secci&oacute;n ERES INDEPENDIENTE, se encuentra vacio, llenalo.";
-        } 
+                if(!isset($_FILES['tarjeta_profesional']) or $_FILES['tarjeta_profesional'] == ""){
+                    $errores[] = "El archivo <code>tarjeta profesional del contador</code> son importantes, verifica y subelos";
+                }
+
+                if(!isset($_FILES['antecedentes_disciplinarios']) or $_FILES['antecedentes_disciplinarios'] == ""){
+                    $errores[] = "El archivo <code>antecedentes disciplinario</code> son importantes, verifica y subelos";
+                }
+
+        }else{
+            
+        }
 
           /* ================================================================================================================= FIN SI ERES INDEPENDIENTE
          ================================================================================================================= */
@@ -1595,15 +1603,57 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
             /* INSERCION TABLA FORMULARIO DOCUMENTACION ALUMNO */
 
 
-            /*  FIN INSERCION TABLA FORMULARIO DOCUMENTACION ALUMNO */
+            /* VALIDACION SI ERES INDEPENDIENTE */
+
+            if(isset($_POST['seleccionIndependiente']) AND $_POST['seleccionIndependiente'] == "1"){
+
+                $declaracion_renta = $_FILES['declaracion_renta'];
+                $certificado_ingreso = $_FILES['certificado_ingreso_avalado'];
+                $tarjeta_profesional = $_FILES['tarjeta_profesional'];
+                $antecedentes_disciplinarios = $_FILES['antecedentes_disciplinarios'];
+                
+
+                $sql_insercion_independiente = "INSERT INTO documentacion_independiente (
+                                                        declaracion_renta,
+                                                        certificado_avalado_contador,
+                                                        tarjeta_profesional_contador,
+                                                        antecedentes_disciplinarios,
+                                                        estado_documentacion_independiente) VALUES(
+                                                        '$declaracion_renta',
+                                                        '$certificado_ingreso',
+                                                        '$tarjeta_profesional',
+                                                        '$antecedentes_disciplinarios',
+                                                        'activo')";
+                $insercion_independiente = $objMatricula->insertar($sql_insercion_independiente);
+
+
+                }else{
+                    
+                }
+
+                $sql = "SELECT * FROM documentacion_independiente ORDER BY id_documentacion_independiente ASC";
+                $consulta_independiente = $objMatricula->find($sql);
+                $id_documentacion_independiente = $consulta_independiente[0];
+
+            /* FIN HISTORIAL INDEPENDENDIENTE * /
 
 
 
 
-            /* INSERCION TABLA FORMULARIO DE SOLICITUD */
-            
-            $numero_documento = $_POST['numero_de_documento_alumno'];
-            $tipo_documento = $_POST['tipo_documento_alumno'];
+
+
+        
+
+        /* INSERCION TABLA FORMULARIO DE SOLICITUD */
+        
+        $id_cedula_masculino = $_POST['numero_id_masculino'];
+        $id_cedula_femenino = $_POST['numero_id_masculino'];
+        $id_cedula_financiero = $_POST['numero_id_masculino'];
+        $id_documentacion = $id_documento_alumno;
+        $id_documentacion_especial = $id_documentacion_inclusion;
+
+        $numero_documento = $_POST['numero_de_documento_alumno'];
+        $tipo_documento = $_POST['tipo_documento_alumno'];
 
             $primer_nombre = $_POST['primer_nombre_alumno'];
 
@@ -1692,11 +1742,11 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                                       motivacion_matricular,
                                       nombre_persona_referido,
                                       nombre_estudiante_referido,
+                                      id_acudiente_femenino,
+                                      id_acudiente_financiero,
+                                      id_acudiente_masculino,
                                       id_documentacion,
-                                      id_documentacion_inclusion,
-                                      id_documentacion_masculino,
-                                      id_documentacion_femenino,
-                                      id_documentacion_financiero,
+                                      id_documentacion_especial,
                                       estado_alumno_solicitud)VALUES(
                                       $numero_documento,
                                       '$foto_alumno',
@@ -1723,11 +1773,11 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                                       '$motivacion_shalom',
                                       '$persona_referida',
                                       '$alumno_referido',
-                                      '$id_documento_alumno',
-                                      '$id_documentacion_inclusion',
-                                      '$id_documentacion_masculino',
-                                      '$id_documentacion_femenino',
-                                      '$id_documentacion_financiero',
+                                      '$id_cedula_femenino',
+                                      '$id_cedula_financiero',
+                                      '$id_cedula_masculino',
+                                      '$id_documentacion',
+                                      '$id_documentacion_especial',
                                       'activo')";
             $insercion_formulario = $objMatricula->insertar($sql_insercion_formulario);
 

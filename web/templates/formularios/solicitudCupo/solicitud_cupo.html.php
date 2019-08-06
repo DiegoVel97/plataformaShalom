@@ -479,8 +479,8 @@
 							<label>Tipo de documento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="number" class="validate" name="numero_celular_masculino">
-							<label for="icon_prefix">N&uacute;mero celular</label>
+							<input id="icon_prefix" type="number" class="validate" name="numero_id_masculino">
+							<label for="icon_prefix">N&uacute;mero c&eacute;dula</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input id="icon_prefix" type="text" class="validate" name="direccion_residencia_masculino">
@@ -604,8 +604,8 @@
 							<label>Tipo de documento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="number" class="validate" name="numero_celular_femenino">
-							<label for="icon_prefix">N&uacute;mero celular</label>
+							<input id="icon_prefix" type="number" class="validate" name="numero_id_femenino">
+							<label for="icon_prefix">N&uacute;mero c&eacute;dula</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input id="icon_prefix" type="text" class="validate" name="direccion_residencia_femenino">
@@ -943,7 +943,7 @@
 						<b>ADJUNTAR DOCUMENTACIÓN SOLO PARA ESTUDIANTES DE INCLUSIÓN ESCOLAR O CON NECESIDADES EDUCATIVAS ESPECIALES</b>
 					</h1>
 				</center>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Fotocopia del historial clínico</span>
 						<input type="file" name="fotocopia_historial_clinico">
@@ -952,7 +952,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Fotocopia del informe de los avances terapeuticos</span>
 						<input type="file" name="fotocopia_informe_avances">
@@ -961,7 +961,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Fotocopia del fonoaudiologia</span>
 						<input type="file" name="fotocopia_fonoaudiologia">
