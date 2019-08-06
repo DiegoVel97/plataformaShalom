@@ -1600,7 +1600,80 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                 $consulta = $objMatricula->find($sql);
                 $id_documento_alumno = $consulta[0];
 
-            /* INSERCION TABLA FORMULARIO DOCUMENTACION ALUMNO */
+            /* INSERCION TABLA DOCUMENTACION INCLUSION ESPECIAL */
+
+            $fotocopia_historial_clinico = $_FILES['fotocopia_historial_clinico']['name'];
+            $fotocopia_informe_avances_terapeuticos = $_FILES['fotocopia_informe_avances']['name'];
+            $fotocopia_fonoaudiologia = $_FILES['fotocopia_fonoaudiologia']['name'];
+            $fotocopia_examen_psicologia = $_FILES['fotocopia_examen_psicologia']['name'];
+            $fotocopia_terapia_ocupacional = $_FILES['fotocopia_terapia']['name'];
+            $evaluacion_neurosicologica = $_FILES['evaluacion_neurosicologica']['name'];
+            $otro_documento = $_FILES['otro_documentos_inclusion']['name'];
+            
+            
+            $sql_documentos = "INSERT INTO documentacion_inclusion_especial (
+                                    fotocopia_historial_clinico,
+                                    fotocopia_avances_terapeuticos,
+                                    fotocopia_fonoaudiologia,
+                                    fotocopia_examen_psicologia,
+                                    fotocopia_terapia_ocupacional,
+                                    evaluacion_neuropsicologia,
+                                    otros_documentos) 
+                                    VALUES(
+                                    '$fotocopia_historial_clinico',
+                                    '$fotocopia_informe_avances_terapeuticos',
+                                    '$fotocopia_fonoaudiologia',
+                                    '$fotocopia_examen_psicologia',
+                                    '$fotocopia_terapia_ocupacional',
+                                    '$evaluacion_neurosicologica',
+                                    '$otro_documento')";
+
+            $insercion_documento = $objMatricula->insertar($sql_documentos);
+
+
+            $sql = "SELECT * FROM documentacion_inclusion_especial ORDER BY id_documentacion_inclusion ASC";
+                $consulta = $objMatricula->find($sql);
+                $id_documentacion_inclusion = $consulta[0];
+
+            /* FIN INSERCION TABLA DOCUMENTACION INCLUSION ESPECIAL */
+
+
+            /* VALIDACION SI ERES INDEPENDIENTE */
+
+            if(isset($_POST['seleccionIndependiente']) AND $_POST['seleccionIndependiente'] == "1"){
+
+                $declaracion_renta = $_FILES['declaracion_renta'];
+                $certificado_ingreso = $_FILES['certificado_ingreso_avalado'];
+                $tarjeta_profesional = $_FILES['tarjeta_profesional'];
+                $antecedentes_disciplinarios = $_FILES['antecedentes_disciplinarios'];
+                
+
+                $sql_insercion_independiente = "INSERT INTO documentacion_independiente (
+                                                        declaracion_renta,
+                                                        certificado_avalado_contador,
+                                                        tarjeta_profesional_contador,
+                                                        antecedentes_disciplinarios,
+                                                        estado_documentacion_independiente) VALUES(
+                                                        '$declaracion_renta',
+                                                        '$certificado_ingreso',
+                                                        '$tarjeta_profesional',
+                                                        '$antecedentes_disciplinarios',
+                                                        'activo')";
+                $insercion_independiente = $objMatricula->insertar($sql_insercion_independiente);
+
+                $sql = "SELECT * FROM documentacion_independiente ORDER BY id_documentacion_independiente ASC";
+                $consulta_independiente = $objMatricula->find($sql);
+                $id_documentacion_independiente = $consulta_independiente[0];
+
+                }else{
+                    
+                    $id_documentacion_independiente="0";
+
+                }
+                
+            /* FIN HISTORIAL INDEPENDENDIENTE * /
+
+            /* INSERCION DOCUMENTACION ESTUDIANTES INCLUSION*/
 
             $fotocopia_historial_clinico = $_FILES['fotocopia_historial_clinico']['name'];
             $fotocopia_informe_avances_terapeuticos = $_FILES['fotocopia_informe_avances']['name'];
@@ -1671,44 +1744,82 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                 $consulta = $objMatricula->find($sql);
                 $id_documento_alumno = $consulta[0];
 
-
-            /* VALIDACION SI ERES INDEPENDIENTE */
-
-            if(isset($_POST['seleccionIndependiente']) AND $_POST['seleccionIndependiente'] == "1"){
-
-                $declaracion_renta = $_FILES['declaracion_renta'];
-                $certificado_ingreso = $_FILES['certificado_ingreso_avalado'];
-                $tarjeta_profesional = $_FILES['tarjeta_profesional'];
-                $antecedentes_disciplinarios = $_FILES['antecedentes_disciplinarios'];
-                
-
-                $sql_insercion_independiente = "INSERT INTO documentacion_independiente (
-                                                        declaracion_renta,
-                                                        certificado_avalado_contador,
-                                                        tarjeta_profesional_contador,
-                                                        antecedentes_disciplinarios,
-                                                        estado_documentacion_independiente) VALUES(
-                                                        '$declaracion_renta',
-                                                        '$certificado_ingreso',
-                                                        '$tarjeta_profesional',
-                                                        '$antecedentes_disciplinarios',
-                                                        'activo')";
-                $insercion_independiente = $objMatricula->insertar($sql_insercion_independiente);
+            /* FIN INSERCION DOCUMENTACION ESTUDIANTES INCLUSION*/
 
 
-                }else{
-                    
-                }
+        /*INSERCION TABLA DATOS DEL ACUDIENTE MASCULINO*/
 
-                $sql = "SELECT * FROM documentacion_independiente ORDER BY id_documentacion_independiente ASC";
-                $consulta_independiente = $objMatricula->find($sql);
-                $id_documentacion_independiente = $consulta_independiente[0];
+        $parentesco_acudiente_masculino = $_POST['parentesco_acudiente_masculino'];
+        $otro_parentesco_masculino = $_POST['otro_parentesco_masculino'];
+        $primer_apellido_masculino = $_POST['primer_apellido_masculino'];
+        $segundo_apellido_masculino = $_POST['segundo_apellido_masculino'];
+        $nombres_masculino = $_POST['nombres_masculino'];
+        $lugar_nacimiento_masculino = $_POST['lugar_nacimiento_masculino'];
+        $fecha_nacimiento_masculino = $_POST['fecha_nacimiento_masculino'];
+        $edad_masculino = $_POST['edad_masculino'];
+        $nacionalidad_masculino = $_POST['nacionalidad_masculino'];
+        $tipo_documento_masculino = $_POST['tipo_documento_masculino'];
+        $numero_id_masculino = $_POST['numero_id_masculino'];
+        $direccion_residencia_masculino = $_POST['direccion_residencia_masculino'];
+        $barrio_actual_masculino = $_POST['barrio_actual_masculino'];
+        $tel_residencia_masculino = $_POST['tel_residencia_masculino'];
+        $celular_masculino = $_POST['celular_masculino'];
+        $email_masculino = $_POST['email_masculino'];
+        $empresa_labora_masculino = $_POST['empresa_labora_masculino'];
+        $profesion_masculino = $_POST['profesion_masculino'];
+        $ocupacion_actual_masculino = $_POST['ocupacion_actual_masculino'];
+        $si_no_es_empleado_masculino = $_POST['si_no_es_empleado_masculino'];
+        $ingreso_promedio_mensual_masculino = $_POST['ingreso_promedio_mensual_masculino'];
+        $otros_ingresos_masculino = $_POST['otros_ingresos_masculino'];
+        $total_ingresos_mensuales_masculino = $_POST['total_ingresos_mensuales_masculino'];
+        $nombres_apellidos=$nombres_masculino." ".$primer_apellido_masculino." ".$segundo_apellido_masculino;
+        $estado_civil="No Registra";
+        $estrato_social="No Registra";
+        $telefono_oficina_actual="No registra";
 
-            /* FIN HISTORIAL INDEPENDENDIENTE * /
+           
 
+            $sql_insercion_formulario = "INSERT INTO datos_acudiente_masculino (
+                                      id_persona_masculina, 
+                                      tipo_documento,
+                                      nombres_apellidos,
+                                      estado_civil,
+                                      direccion_residencia,
+                                      estrato_social,
+                                      telefono_residencia,
+                                      telefono_oficina_actual,
+                                      numero_celular,
+                                      correo_persona,
+                                      empresa_donde_trabaja,
+                                      profesion_persona,
+                                      ocupacion_actual,
+                                      id_documentacion_independiente,
+                                      actividad_economica,
+                                      ingreso_promedio,
+                                      otros_ingresos,
+                                      total_ingresos,
+                                      estado)VALUES(
+                                      $numero_id_masculino,
+                                      '$tipo_documento_masculino',
+                                      '$nombres_apellidos',
+                                      '$estado_civil',
+                                      '$direccion_residencia_masculino',
+                                      '$tel_residencia_masculino',
+                                      '$telefono_oficina_actual',
+                                      '$celular_masculino',
+                                      '$email_masculino',
+                                      '$empresa_labora_masculino',
+                                      '$profesion_masculino',
+                                      '$ocupacion_actual_masculino',
+                                      '$id_documentacion_independiente',
+                                      '$si_no_es_empleado_masculino',
+                                      '$ingreso_promedio_mensual_masculino',
+                                      '$otros_ingresos_masculino',
+                                      '$total_ingresos_mensuales_masculino',
+                                      'Activo')";
+            $insercion_formulario = $objMatricula->insertar($sql_insercion_formulario);
 
-
-
+        /*FIN INSERCION TABLA DATOS DEL ACUDIENTE MASCULINO*/
 
 
         
