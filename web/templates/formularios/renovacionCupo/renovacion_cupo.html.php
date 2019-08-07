@@ -161,7 +161,7 @@
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="gradoAlumno" id="gradoAlumno" value="">
 							<select id="gradoAlumnoSelect">
-								<option value="" disabled selected>Grado a cursar</option>
+								<option value="" disabled selected>Grado en el que ingreso el alumno</option>
 						      <?php foreach(pag_grados_colegios() as $grados) { ?>
 						      	<option value="<?php echo $grados['id_grado_colegio']; ?>"><?php echo $grados['descripcion_grado_Colegio']; ?></option>
 						      <?php } ?>
@@ -201,7 +201,7 @@
 							</select>
 							<label>N&uacute;mero de hermanos:</label>
 						</div>
-						<div class="input-field col s12 m4 l4 xl4">
+						<div class="input-field col s12 m8 l8 xl8">
 							<input id="" type="text" class="validate" name="permaneceEstudianteTarde">
 							<label for="">Con quien permanece el estudiante en las tardes:</label>
 						</div>

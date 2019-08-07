@@ -727,12 +727,14 @@
 				<?php 
 
             $extension_rc = explode(".", $alumno['registro_civil']);
-            if($extension_rc[1] == "jpeg" OR $extension_rc[1] == "jpg" OR $extension_rc[1] == "png"){
+            $final_extension_rc = end($extension_rc);
+
+            if($final_extension_rc == "jpeg" OR $final_extension_rc == "jpg" OR $final_extension_rc == "png"){
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/registro_civil-".$alumno['registro_civil'];
             	
             	?>
 				<button type="button" class="btn waves-effect col s12 m12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - REGISTRO CIVIL</button>
-           <?php }else if($extension_rc[1] == "pdf"){ ?>
+           <?php }else if($final_extension_rc == "pdf"){ ?>
            	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/registro_civil-".$alumno['registro_civil']; ?>
             	<a href="<?php echo $url; ?>" target="_blank">
             		<button type="button" class="btn waves-effect col s12 m12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARNET VACUNACION</button>
@@ -742,13 +744,16 @@
             }
 
             $extension_ti = explode(".", $alumno['tarjeta_identidad']);
-            if($extension_ti[1] == "jpeg" OR $extension_ti[1] == "jpg" OR $extension_ti[1] == "png"){
+
+            $final_extension_ti = end($extension_ti);
+
+            if($final_extension_ti == "jpeg" OR $final_extension_ti == "jpg" OR $final_extension_ti == "png"){
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/tarjeta_identidad-".$alumno['registro_civil'];
             	?>
 
 				<button type="button" class="btn waves-effect col s12 m12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - TARJETA IDENTIDAD</button>
 
-          <?php }else if($extension_ti[1] == "pdf"){ ?>
+          <?php }else if($final_extension_ti == "pdf"){ ?>
             	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/tarjeta_identidad-".$alumno['tarjeta_identidad']; ?>
             	<a href="<?php echo $url; ?>" target="_blank">
             		<button type="button" class="btn waves-effect col s12 m12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - TARJETA IDENTIDAD</button>
@@ -759,11 +764,14 @@
 
 
             $extension_cv = explode(".", $alumno['carnet_vacunacion']);
-            if($extension_cv[1] == "jpeg" OR $extension_cv[1] == "jpg" OR $extension_cv[1] == "png"){
+            
+            $final_extension_cv = end($extension_cv);
+
+            if($final_extension_cv == "jpeg" OR $final_extension_cv == "jpg" OR $final_extension_cv == "png"){
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carnet_vacunacion-".$alumno['carnet_vacunacion'];
             	?>
 				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CARNET VACUNACION</button>
-            <?php }else if($extension_cv[1] == "pdf"){ ?>
+            <?php }else if($final_extension_cv == "pdf"){ ?>
             	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carnet_vacunacion-".$alumno['carnet_vacunacion']; ?>
             	<a href="<?php echo $url; ?>" target="_blank">
             		<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARNET VACUNACION</button>
@@ -774,11 +782,15 @@
             
 
             $extension_eps = explode(".", $alumno['carnet_eps']);
-            if($extension_eps[1] == "jpeg" OR $extension_eps[1] == "jpg" OR $extension_eps[1] == "png"){
+            $final_extension_eps = end($extension_eps);
+
+
+
+            if($final_extension_eps == "jpeg" OR $final_extension_eps == "jpg" OR $final_extension_eps == "png"){
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carnet_eps-".$alumno['carnet_eps'];
             	?>
 				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CARNET EPS</button>
-             <?php }else if($extension_eps[1] == "pdf"){ ?>
+             <?php }else if($final_extension_eps == "pdf"){ ?>
             	
              	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carnet_eps-".$alumno['carnet_eps']; ?>
             	<a href="<?php echo $url; ?>" target="_blank">
@@ -799,11 +811,14 @@
 	          }else{
 
              $extension_cm = explode(".", $alumno['certificado_medico']);
-            if($extension_cm[1] == "jpeg" OR $extension_cm[1] == "jpg" OR $extension_cm[1] == "png"){
+            $final_extension_cm = end($extension_cm);
+
+
+            if($final_extension_cm == "jpeg" OR $final_extension_cm == "jpg" OR $final_extension_cm == "png"){
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_medico-".$alumno['certificado_medico']; ;
             	?>
 				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CERTIFICADO MEDICO</button>
-            <?php }else if($extension_cm[1] == "pdf"){ ?>
+            <?php }else if($final_extension_cm == "pdf"){ ?>
             	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_medico-".$alumno['certificado_medico']; ?>
 
             	<a href="<?PHP echo($url) ?>" target="_blank">
@@ -816,14 +831,18 @@
 
 
             $extension_cvi = explode(".", $alumno['certificado_visual']);
-            if($extension_cvi[1] == "jpeg" OR $extension_cvi[1] == "jpg" OR $extension_cvi[1] == "png"){
+
+            $final_extension_cvi = end($extension_cvi);
+
+
+            if($final_extension_cvi == "jpeg" OR $final_extension_cvi == "jpg" OR $final_extension_cvi == "png"){
 
             	$url =  "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_visual-".$alumno['certificado_visual'];
             	?>
 
 				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CERTIFICADO VISUAL</button>
 
-            <?php }else if($extension_cvi[1] == "pdf"){ 
+            <?php }else if($final_extension_cvi == "pdf"){ 
 
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_visual-".$alumno['certificado_visual'];
             	

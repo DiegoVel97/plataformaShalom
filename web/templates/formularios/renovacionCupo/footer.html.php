@@ -19,13 +19,7 @@
 
   <script type="text/javascript" src="<?php echo addLib('js/global.js') ?>"></script>
 
-  <script type="text/javascript">
-    
-    <?php if($_GET['ini']=="false"){ ?>
-      Materialize.toast('Error de Informacion', 2000,'rounded col red');
-    <?php } ?>
-    
-  </script>
+
 
 </body>
 

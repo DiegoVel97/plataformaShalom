@@ -410,7 +410,7 @@ $(document).ready(function(){
 
 
     $(".file-form").on('submit', function () {
-        alert();
+        
         $('.btn_submit_file').prop('disabled', false);
         var url = $("#formularioRenovacionCupo").attr("data-action");
         var options = {
@@ -421,8 +421,9 @@ $(document).ready(function(){
 
                 if (respuesta.accion === true) {
                         
-                    Materialize.toast(respuesta.mensajes, 2500, 'rounded col green');
+Materialize.toast(respuesta.mensajes, 1500, 'rounded col green');
 
+                    setTimeout(window.location.href = "<?php echo addLib('index.php'); ?>", 4000);                    
 
 
                 } else {
@@ -448,11 +449,13 @@ $(document).ready(function(){
         var options = {
             url: url,
             success: function (response) {
-                alert(response);
+                
                 var respuesta = $.parseJSON(response);
 
                 if (respuesta.accion === true) {
                     Materialize.toast(respuesta.mensajes, 1500, 'rounded col green');
+
+                    setTimeout(window.location.href = "<?php echo addLib('index.php'); ?>", 4000);
                 } else {
                     $('#cont_errors_ajax').html(respuesta.mensajes);
                     $('#cont_errors_ajax').css('display', 'block');
