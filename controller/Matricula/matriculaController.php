@@ -1049,7 +1049,9 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
             $errores[] = "El campo <code><b>terapia_alumno</b></code> no puede quedar vacio";
         }
         if(!isset($_POST['cual_terapia_alumno']) or $_POST['cual_terapia_alumno'] == ""){
-            $errores[] = "El campo <code><b>cual_terapia_alumno</b></code> no puede quedar vacio";
+            $cual_terapia_alumno = "No registra";
+        }else{
+            $cual_terapia_alumno = $_POST['cual_terapia_alumno'];
         }
         if(!isset($_POST['grupo_etnico_alumno']) or $_POST['grupo_etnico_alumno'] == ""){
             $errores[] = "El campo <code><b>grupo_etnico_alumno</b></code> no puede quedar vacio";
@@ -1059,7 +1061,9 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
         }
 
         if(!isset($_POST['otras_actividades_extracurriculares_alumno']) or $_POST['otras_actividades_extracurriculares_alumno'] == ""){
-            $errores[] = "El campo <code><b>otras_actividades_extracurriculares_alumno</b></code> no puede quedar vacio";
+            $otras_actividades_extracurriculares_alumno = "No registra";
+        }else{
+            $otras_actividades_extracurriculares_alumno = $_POST['otras_actividades_extracurriculares_alumno'];
         }
 
         if(!isset($_POST['eps_alumno']) or $_POST['eps_alumno'] == ""){
@@ -1093,12 +1097,16 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
 
 
         if(!isset($_POST['parentesco_acudiente_masculino']) or $_POST['parentesco_acudiente_masculino'] == ""){
-            $errores[] = "El campo <code><b>parentesco_acudiente_mas</b></code> no puede queda vacio";
+            $otro_parentesco_masculino = "No registra";
+        }else {
+            $otro_parentesco_masculino = $_POST['parentesco_acudiente_masculino'];
         }
 
         if(!isset($_POST['otro_parentesco_masculino']) or $_POST['otro_parentesco_masculino'] == ""){
-            $errores[] = "El campo <code><b>otro_parentesco_masculin</b></code> no puede queda vacio";
-        }
+            $otro_parentesco_masculino = "No registra";
+        }else{
+            $otro_parentescto_masculino = $_POST['otro_parentesco_masculino'];
+        }   
 
         if(!isset($_POST['primer_apellido_masculino']) or $_POST['primer_apellido_masculino'] == ""){
             $errores[] = "El campo <code><b>primer_apellido_masculin</b></code> no puede queda vacio";
@@ -1202,7 +1210,9 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
             }
 
             if(!isset($_POST['otro_parentesco_femenino']) or $_POST['otro_parentesco_femenino'] == ""){
-                $errores[] = "El campo <code><b>otro_parentesco_femenino</b></code> no puede quedar vacio";
+                $otro_parentesco_femenino = "No registra";
+            }else{
+                $otro_parentesco_femenino = $_POST['otro_parentesco_femenino'];
             }
 
             if(!isset($_POST['primer_apellido_femenino']) or $_POST['primer_apellido_femenino'] == ""){
@@ -1210,7 +1220,9 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
             }
 
             if(!isset($_POST['segundo_apellido_femenino']) or $_POST['segundo_apellido_femenino'] == ""){
-                $errores[] = "El campo <code><b>segundo_apellido_femenino</b></code> no puede quedar vacio";
+                $segundo_apellido_femenino = "No registra";
+            }else{
+                $segundo_apellido_femenino = $_POST['segundo_apellido_femenino'];
             }
 
             if(!isset($_POST['nombres_femenino']) or $_POST['nombres_femenino'] == ""){
@@ -1237,10 +1249,6 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                 $errores[] = "El campo <code><b>tipo_documento_femenino</b></code> no puede quedar vacio";
             }
 
-            if(!isset($_POST['numero_celular_femenino']) or $_POST['numero_celular_femenino'] == ""){
-                $errores[] = "El campo <code><b>numero_celular_femenino</b></code> no puede quedar vacio";
-            }
-
             if(!isset($_POST['direccion_residencia_femenino']) or $_POST['direccion_residencia_femenino'] == ""){
                 $errores[] = "El campo <code><b>direccion_residencia_femenino</b></code> no puede quedar vacio";
             }
@@ -1254,7 +1262,7 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
             }
 
             if(!isset($_POST['celular_femenino']) or $_POST['celular_femenino'] == ""){
-                $errores[] = "El campo <code><b>celular_femenino</b></code> no puede quedar vacio";
+                $errores[] = "El campo <code><b>celular femenino</b></code> no puede quedar vacio";
             }
 
             if(!isset($_POST['email_femenino']) or $_POST['email_femenino'] == ""){
@@ -1308,8 +1316,10 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
         } 
 
         if(!isset($_POST['otro_parentesco_financiero']) or $_POST['otro_parentesco_financiero'] == ""){
-            $errores[] = "El campo <code>otro_parentesco_financiero</code> no puede quedar vacio.";
-        } 
+            $parentesco_otros_financiero = "No registra.";
+        }else{
+            $parentesco_otros_financiero = $_POST['otro_parentesco_financiero'];
+        }
 
         if(!isset($_POST['primer_apellido_financiero']) or $_POST['primer_apellido_financiero'] == ""){
             $errores[] = "El campo <code>primer_apellido_financiero</code> no puede quedar vacio.";
@@ -1343,7 +1353,7 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
             $errores[] = "El campo <code>tipo_documento_financiero</code> no puede quedar vacio.";
         } 
 
-        if(!isset($_POST['numero_celular_financiero']) or $_POST['numero_celular_financiero'] == ""){
+        if(!isset($_POST['celular_financiero']) or $_POST['celular_financiero'] == ""){
             $errores[] = "El campo <code>numero celular financiero</code> no puede quedar vacio.";
         } 
 
@@ -1465,7 +1475,7 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
         } 
 
         if(!isset($_FILES['fotocopia_examen_psicologia']) or $_FILES['fotocopia_examen_psicologia'] == ""){
-            $errores[] = "El archivo <code>fotocopia examen psicologia</code> de la seccion inclusion no debe quedar vacio.";
+            $errores[] = "El archivo <code>fotocopiasss examen psicologia</code> de la seccion inclusion no debe quedar vacio.";
         } 
 
         if(!isset($_FILES['fotocopia_terapia']) or $_FILES['fotocopia_terapia'] == ""){
@@ -1600,6 +1610,8 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                 $consulta = $objMatricula->find($sql);
                 $id_documento_alumno = $consulta[0];
 
+
+
             /* INSERCION TABLA DOCUMENTACION INCLUSION ESPECIAL */
 
             $fotocopia_historial_clinico = $_FILES['fotocopia_historial_clinico']['name'];
@@ -1671,83 +1683,36 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
 
                 }
                 
-            /* FIN HISTORIAL INDEPENDENDIENTE * /
+            /* FIN HISTORIAL INDEPENDENDIENTE */
 
-            /* INSERCION DOCUMENTACION ESTUDIANTES*/
 
-            $fotocopia_historial_clinico = $_FILES['fotocopia_historial_clinico']['name'];
-            $fotocopia_informe_avances_terapeuticos = $_FILES['fotocopia_informe_avances']['name'];
-            $fotocopia_fonoaudiologia = $_FILES['fotocopia_fonoaudiologia']['name'];
-            $fotocopia_examen_psicologia = $_FILES['fotocopia_examen_psicologia']['name'];
-            $fotocopia_terapia_ocupacional = $_FILES['fotocopia_terapia']['name'];
-            $evaluacion_neurosicologica = $_FILES['evaluacion_neurosicologica']['name'];
-            $otro_documento = $_FILES['otro_documentos_inclusion']['name'];
+
+
+
+        /*  ==================================== INSERCION PROCEDENCIA ==================================== */
+
+
+        $grado_procedencia = $_POST['grado_procedencia']."/".$_POST['grado_procedencia2']."/".$_POST['grado_procedencia3']."/".$_POST['grado_procedencia4'];
+
+        $institucion_procedencia = $_POST['institucion_procedencia']."/".$_POST['institucion_procedencia2']."/".$_POST['institucion_procedencia3']."/".$_POST['institucion_procedencia4'];
+
+        $ano_lectivo_procedencia = $_POST['ano_lectivo_procedencia']."/".$_POST['ano_lectivo_procedencia2']."/".$_POST['ano_lectivo_procedencia3']."/".$_POST['ano_lectivo_procedenci4'];
+
+
+
+        $sql = "INSERT INTO procedencia_academica_alumno (grado,institucion,ano_lectivo) VALUES ('$grado_procedencia','$institucion_procedencia','$ano_lectivo_procedencia')";
+        $insercion_procedencia = $objMatricula->insertar($sql);
+
             
-            if(!isset($_FILES['carta_laboral_padre_alumno']) or $_FILES['carta_laboral_padre_alumno'] == ""){
-                $carta_laboral_padre = "No registra";
-            }else{
-                $carta_laboral_padre = $_FILES['carta_laboral_padre_alumno']['name'];
-            }
-
-            if(!isset($_FILES['carta_laboral_madre_alumno']) or $_FILES['carta_laboral_madre_alumno'] == ""){
-                $carta_laboral_madre = "No registra";
-            }else{
-                $carta_laboral_padre = $_FILES['carta_laboral_madre_alumno']['name'];
-            } 
+            /*  ==================================== FIN INSERCION PROCEDENCIA ==================================== *
 
 
-            $recibo_publico_alumno = $_FILES['recibo_publico_alumno'];
-            $estado = "activo";
-
-            $sql_documentos = "INSERT INTO documentacion (
-                                    fotocopia_ultimo_informe_academico,
-                                    certificado_ultimo_grado,
-                                    fotocopia_informe_convivencia,
-                                    fotocopia_paz_y_salvo,
-                                    comprobante_pago_solicitud,
-                                    registro_civil,
-                                    tarjeta_identidad,
-                                    carnet_vacunacion,
-                                    carnet_eps,
-                                    certificado_medico,
-                                    certificado_visual,
-                                    certificado_auditivo,
-                                    cedula_padre,
-                                    cedula_madre,
-                                    carta_laboral_padre,
-                                    carta_laboral_madre,
-                                    recibo_publico,
-                                    estado_documento) 
-                                    VALUES(
-                                    '$fotocopia_informe_academico_alumno',
-                                    '$certificado_original_grado_alumno',
-                                    '$fotocopia_convivencia_alumno',
-                                    '$fotocopia_paz_y_salvo_alumno',
-                                    '$comprobante_pago_alumno',
-                                    '$registro_civil_alumno',
-                                    '$tarjeta_de_identidad_alumno',
-                                    '$carnet_vacunacion_alumno',
-                                    '$fotocopia_carnet_eps_alumno',
-                                    '$certificado_medico',
-                                    '$certificado_visual',
-                                    '$certificado_auditivo',
-                                    '$cedula_padre_alumno',
-                                    '$cedula_madre_alumno',
-                                    '$carta_laboral_padre',
-                                    '$carta_laboral_madre',
-                                    '$recibo_publico_alumno',
-                                    '$estado')";
-            $insercion_documento = $objMatricula->insertar($sql_documentos);
 
 
-            $sql = "SELECT * FROM documentacion ORDER BY id_documento ASC";
-                $consulta = $objMatricula->find($sql);
-                $id_documento_alumno = $consulta[0];
-
-            /* FIN INSERCION DOCUMENTACION ESTUDIANTES*/
 
 
-        /*INSERCION TABLA DATOS DEL ACUDIENTE MASCULINO*/
+
+              /*INSERCION TABLA DATOS DEL ACUDIENTE MASCULINO*/
 
         $parentesco_acudiente_masculino = $_POST['parentesco_acudiente_masculino'];
         $otro_parentesco_masculino = $_POST['otro_parentesco_masculino'];
@@ -1821,7 +1786,12 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
 
         /*FIN INSERCION TABLA DATOS DEL ACUDIENTE MASCULINO*/
 
-        /* INSERCION TABLA DE DATOS DEL ACUDIENTE FEMENINO*/
+
+
+
+         /* INSERCION TABLA DE DATOS DEL ACUDIENTE FEMENINO*/
+
+
             $parentesco_acudiente_femenino = $_POST['parentesco_acudiente_femenino'];
             $otro_parentesco_femenino = $_POST['otro_parentesco_femenino'];
             $primer_apellido_femenino = $_POST['primer_apellido_femenino'];
@@ -1896,7 +1866,11 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
 
         /* FIN INSERCION TABLA DE DATOS DEL ACUDIENTE FEMENINO*/
 
+
+
+
         /* INSERCION TABLA DE DATOS DEL ACUDIENTE FINANCIERO*/
+        
             $parentesco_acudiente_financiero = $_POST['parentesco_acudiente_financiero'];
             $otro_parentesco_financiero = $_POST['otro_parentesco_financiero'];
             $primer_apellido_financiero = $_POST['primer_apellido_financiero'];
@@ -1918,9 +1892,6 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
             $estrato_social_financiero="No Registra";
             $telefono_oficina_actual="No registra";
             
-
-               
-
                 $sql_insercion_formulario = "INSERT INTO datos_acudiente_financiero (
                                           id_acudiente_financiero, 
                                           nombre_acudiente_financiero,
@@ -2026,6 +1997,23 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
 
             $foto_aluno = $_FILES['foto_alumno']['name'];
 
+
+
+            $terapia_alumno = $_POST['terapia_alumno'];
+            $cual_terapia_alumno = $_POST['cual_terapia_alumno'];
+            $grupo_etnico_alumno = $_POST['grupo_etnico_alumno'];
+            $actividades_extracurriculares_alumno = $_POST['actividades_extracurriculares_alumno'];
+            $otras_actividades_extracurriculares_alumno = $_POST['otras_actividades_extracurriculares_alumno'];
+            $eps_alumno = $_POST['eps_alumno'];
+            $enfermedades_alumno = $_POST['enfermedades_alumno'];
+            $tipo_sangre_alumno = $_POST['tipo_sangre_alumno'];
+            $rh_sangre_alumno = $_POST['rh_sangre_alumno'];
+            $emergencia_llamar_alumno = $_POST['emergencia_llamar_alumno'];
+            $tipo_escritura_alumno = $_POST['tipo_escritura_alumno'];
+
+
+
+
             $sql_insercion_formulario = "INSERT INTO formulario_solicitud (
                                       id_alumno, 
                                       foto_alumno,
@@ -2052,6 +2040,17 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                                       motivacion_matricular,
                                       nombre_persona_referido,
                                       nombre_estudiante_referido,
+                                      terapia_alumno,
+                                      cual_terapia_alumno,
+                                      grupo_etnico_alumno,
+                                      actividades_extracurriculares_alumno,
+                                      otras_actividades_extracurriculares_alumno,
+                                      eps_alumno,
+                                      enfermedades_alumno,
+                                      tipo_sangre_alumno,
+                                      rh_sangre_alumno,
+                                      emergencia_llamar_alumno,
+                                      tipo_escritura_alumno,
                                       id_acudiente_femenino,
                                       id_acudiente_financiero,
                                       id_acudiente_masculino,
@@ -2083,6 +2082,17 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                                       '$motivacion_shalom',
                                       '$persona_referida',
                                       '$alumno_referido',
+                                      '$terapia_alumno',
+                                      '$cual_terapia_alumno',
+                                      '$grupo_etnico_alumno',
+                                      '$actividades_extracurriculares_alumno',
+                                      '$otras_actividades_extracurriculares_alumno',
+                                      '$eps_alumno',
+                                      '$enfermedades_alumno',
+                                      '$tipo_sangre_alumno',
+                                      '$rh_sangre_alumno',
+                                      '$emergencia_llamar_alumno',
+                                      '$tipo_escritura_alumno',
                                       '$id_cedula_femenino',
                                       '$id_cedula_financiero',
                                       '$id_cedula_masculino',
@@ -2090,8 +2100,6 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                                       '$id_documentacion_especial',
                                       'activo')";
             $insercion_formulario = $objMatricula->insertar($sql_insercion_formulario);
-
-
 
 
 

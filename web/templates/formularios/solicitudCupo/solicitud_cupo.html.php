@@ -78,44 +78,44 @@
 				<div class="camposFormulario col s12 m12 l12 xl12">
 					<div class="row">
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="primer_nombre_alumno">
-							<label for="icon_prefix">Primer nombre</label>
+							<input  type="text" class="validate" name="primer_nombre_alumno">
+							<label for="">Primer nombre</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="segundo_nombre_alumno">
-							<label for="icon_prefix">Segundo nombre</label>
+							<input  type="text" class="validate" name="segundo_nombre_alumno">
+							<label for="">Segundo nombre</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="primero_apellido_alumno">
-							<label for="icon_prefix">Primer apellido</label>
+							<input  type="text" class="validate" name="primero_apellido_alumno">
+							<label for="">Primer apellido</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="segundo_apellido_alumno">
-							<label for="icon_prefix">Segundo apellido</label>
-						</div>
-
-						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="lugar_de_nacimiento_alumno">
-							<label for="icon_prefix">Lugar de nacimiento</label>
+							<input  type="text" class="validate" name="segundo_apellido_alumno">
+							<label for="">Segundo apellido</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="date" name="fecha_de_nacimiento_alumno"><br>
-							<label for="icon_prefix">Fecha de nacimiento</label>
+							<input  type="text" class="validate" name="lugar_de_nacimiento_alumno">
+							<label for="">Lugar de nacimiento</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="direccion_residencia_alumno">
-							<label for="icon_prefix">Direcci&oacute;n de residencia:</label>
-						</div>
-						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="barrio_actual_alumno">
-							<label for="icon_prefix">Barrio actual:</label>
+							<input  type="date" name="fecha_de_nacimiento_alumno"><br>
+							<label for="">Fecha de nacimiento</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="comuna_alumno">
-							<label for="icon_prefix">Comuna o Localidad</label>
+							<input  type="text" class="validate" name="direccion_residencia_alumno">
+							<label for="">Direcci&oacute;n de residencia:</label>
+						</div>
+						<div class="input-field col s12 m4 l4 xl4">
+							<input  type="text" class="validate" name="barrio_actual_alumno">
+							<label for="">Barrio actual:</label>
+						</div>
+
+						<div class="input-field col s12 m4 l4 xl4">
+							<input  type="text" class="validate" name="comuna_alumno">
+							<label for="">Comuna o Localidad</label>
 						</div>	
 
 
@@ -144,31 +144,31 @@
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="number" class="validate" name="numero_de_documento_alumno">
-							<label for="icon_prefix">N&uacute;mero de documento</label>
+							<input  type="number" class="validate" name="numero_de_documento_alumno">
+							<label for="">N&uacute;mero de documento</label>
 						</div>
 
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="ciudad_expedicion_documento_alumno">
-							<label for="icon_prefix">Ciudad de expedici&oacute;n</label>
+							<input  type="text" class="validate" name="ciudad_expedicion_documento_alumno">
+							<label for="">Ciudad de expedici&oacute;n</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="tel_residencia_alumno">
-							<label for="icon_prefix">Tel. de residencia actual:</label>
+							<input  type="text" class="validate" name="tel_residencia_alumno">
+							<label for="">Tel. de residencia actual:</label>
 						</div>
 <div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="celular_alumno">
-							<label for="icon_prefix">Tel. celular:</label>
+							<input  type="text" class="validate" name="celular_alumno">
+							<label for="">Tel. celular:</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="email" class="validate" name="correo_alumno">
-							<label for="icon_prefix">Correo</label>
+							<input  type="email" class="validate" name="correo_alumno">
+							<label for="">Correo</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="email" class="validate" name="confirmarCorreoAlumno">
-							<label for="icon_prefix">Confirmar correo</label>
+							<input  type="email" class="validate" name="confirmarCorreoAlumno">
+							<label for="">Confirmar correo</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
@@ -185,8 +185,8 @@
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="cualesVive">
-							<label for="icon_prefix">¿Cuales?</label>
+							<input  type="text" class="validate" name="cualesVive">
+							<label for="">¿Cuales?</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
@@ -206,8 +206,8 @@
 							<label>Grado en el que el estudiante ingreso al Centro Educativo Shalom por primera vez:</label>
 						</div>
                       <div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="institucion_educativa_proviene_alumno">
-							<label for="icon_prefix">Intittuci&oacute;n educativa de donde proviene</label>
+							<input  type="text" class="validate" name="institucion_educativa_proviene_alumno">
+							<label for="">Intittuci&oacute;n educativa de donde proviene</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="motivo_retiro_alumno" id="motivo_retiro_alumno" value="">
@@ -222,8 +222,8 @@
 							<label>El motivo del retiro</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="otro_retiro_alumno">
-							<label for="icon_prefix">Otro, ¿cual?</label>
+							<input  type="text" class="validate" name="otro_retiro_alumno">
+							<label for="">Otro, ¿cual?</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="motivacion_shalom_alumno" id="motivacion_shalom_alumno" value="">
@@ -238,12 +238,12 @@
 							<label>Que le motiva a matricular a sus hijos en el Centro Educativo Shalom Cali</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="persona_referida_alumno">
-							<label for="icon_prefix">Nombre persona que lo refirio</label>
+							<input  type="text" class="validate" name="persona_referida_alumno">
+							<label for="">Nombre persona que lo refirio</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="alumno_referido_alumno">
-							<label for="icon_prefix">Nombre de el/la estudiante</label>
+							<input  type="text" class="validate" name="alumno_referido_alumno">
+							<label for="">Nombre de el/la estudiante</label>
 						</div>
 					</div>
 				</div>
@@ -265,55 +265,55 @@
 					</h1>
 				</center>
 				<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="grado_procedencia">
-							<label for="icon_prefix">Grado</label>
+							<input  type="text" class="validate" name="grado_procedencia">
+							<label for="">Grado</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="institucion_procedencia">
-							<label for="icon_prefix">Instituci&oacute;n Educativa</label>
+							<input  type="text" class="validate" name="institucion_procedencia">
+							<label for="">Instituci&oacute;n Educativa</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="ano_lectivo_procedencia">
-							<label for="icon_prefix">Año lectivo</label>
-						</div>
-
-						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="grado_procedencia2">
-							<label for="icon_prefix">Grado</label>
-						</div>
-						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="institucion_procedencia2">
-							<label for="icon_prefix">Instituci&oacute;n Educativa</label>
-						</div>
-						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="ano_lectivo_procedencia2">
-							<label for="icon_prefix">Año lectivo</label>
+							<input  type="text" class="validate" name="ano_lectivo_procedencia">
+							<label for="">Año lectivo</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="grado_procedencia3">
-							<label for="icon_prefix">Grado</label>
+							<input  type="text" class="validate" name="grado_procedencia2">
+							<label for="">Grado</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="institucion_procedencia3">
-							<label for="icon_prefix">Instituci&oacute;n Educativa</label>
+							<input  type="text" class="validate" name="institucion_procedencia2">
+							<label for="">Instituci&oacute;n Educativa</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="ano_lectivo_procedencia3">
-							<label for="icon_prefix">Año lectivo</label>
+							<input  type="text" class="validate" name="ano_lectivo_procedencia2">
+							<label for="">Año lectivo</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="grado_procedencia4">
-							<label for="icon_prefix">Grado</label>
+							<input  type="text" class="validate" name="grado_procedencia3">
+							<label for="">Grado</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="institucion_educativa_procedencia4">
-							<label for="icon_prefix">Instituci&oacute;n Educativa</label>
+							<input  type="text" class="validate" name="institucion_procedencia3">
+							<label for="">Instituci&oacute;n Educativa</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="ano_lectivo_procedencia4">
-							<label for="icon_prefix">Año lectivo</label>
+							<input  type="text" class="validate" name="ano_lectivo_procedencia3">
+							<label for="">Año lectivo</label>
+						</div>
+
+						<div class="input-field col s12 m4 l4 xl4">
+							<input  type="text" class="validate" name="grado_procedencia4">
+							<label for="">Grado</label>
+						</div>
+						<div class="input-field col s12 m4 l4 xl4">
+							<input  type="text" class="validate" name="institucion_educativa_procedencia4">
+							<label for="">Instituci&oacute;n Educativa</label>
+						</div>
+						<div class="input-field col s12 m4 l4 xl4">
+							<input  type="text" class="validate" name="ano_lectivo_procedencia4">
+							<label for="">Año lectivo</label>
 						</div>
 
 						<div class="input-field col s12 m8 l8 xl8">
@@ -327,8 +327,8 @@
 							<label>El aspirante presenta algún tipo de discapacidad o lleva algún proceso terapéutico</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="cual_terapia_alumno">
-							<label for="icon_prefix">Otros, ¿cual?</label>
+							<input  type="text" class="validate" name="cual_terapia_alumno">
+							<label for="">Otros, ¿cual?</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="grupo_etnico_alumno" id="grupo_etnico_alumno" value="">
@@ -353,8 +353,8 @@
 							<label>¿Que otras actividades extracurriculares de importancia realiza el/la estudiante</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="otras_actividades_extracurriculares_alumno">
-							<label for="icon_prefix">Otras, ¿cual?</label>
+							<input  type="text" class="validate" name="otras_actividades_extracurriculares_alumno">
+							<label for="">Otras, ¿cual?</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="eps_alumno" id="eps_alumno" value="">
@@ -367,8 +367,8 @@
 							<label>EPS/ Seguro de accidentes</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="enfermedades_alumno">
-							<label for="icon_prefix">¿Que enfermedades ha padecido o padece?</label>
+							<input  type="text" class="validate" name="enfermedades_alumno">
+							<label for="">¿Que enfermedades ha padecido o padece?</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="tipo_sangre_alumno" id="tipo_sangre_alumno" value="">
@@ -392,8 +392,8 @@
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="emergencia_llamar_alumno">
-							<label for="icon_prefix">En caso de emergencia llevar a la clinica...</label>
+							<input  type="text" class="validate" name="emergencia_llamar_alumno">
+							<label for="">En caso de emergencia llevar a la clinica...</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
@@ -422,7 +422,7 @@
 					</h1>
 				</center>
 				<div class="input-field col s12 m8 l8 xl8">
-							<input type="hidden" name="parentesco_acudiente_masculino" id="cantidadHermanoAlumno" value="">
+							<input type="hidden" name="parentesco_acudiente_masculino" id="parentesco_acudiente_masculino" value="">
 							<select id="parentesco_acudiente_masculino_select">
 								<option value="" disabled selected>Seleccionar parentesco</option>
 								<option value="Padre">Padre</option>
@@ -434,39 +434,39 @@
 							<label>Cual es su parentesco con el/la estudiante</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="otro_parentesco_masculino">
-							<label for="icon_prefix">Otro, ¿cual?</label>
+							<input  type="text" class="validate" name="otro_parentesco_masculino">
+							<label for="">Otro, ¿cual?</label>
 						</div>
 
 
 				<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="primer_apellido_masculino">
-							<label for="icon_prefix">Primer apellido</label>
+							<input  type="text" class="validate" name="primer_apellido_masculino">
+							<label for="">Primer apellido</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="segundo_apellido_masculino">
-							<label for="icon_prefix">Segundo apellido</label>
+							<input  type="text" class="validate" name="segundo_apellido_masculino">
+							<label for="">Segundo apellido</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="nombres_masculino">
-							<label for="icon_prefix">Nombres</label>
+							<input  type="text" class="validate" name="nombres_masculino">
+							<label for="">Nombres</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="lugar_nacimiento_masculino">
-							<label for="icon_prefix">Lugar de nacimiento</label>
+							<input  type="text" class="validate" name="lugar_nacimiento_masculino">
+							<label for="">Lugar de nacimiento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="date" class="validate" name="fecha_nacimiento_masculino">
-							<label for="icon_prefix">Fecha nacimiento</label>
+							<input  type="date" class="validate" name="fecha_nacimiento_masculino">
+							<label for="">Fecha nacimiento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="edad_masculino">
-							<label for="icon_prefix">Edad</label>
+							<input  type="text" class="validate" name="edad_masculino">
+							<label for="">Edad</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="nacionalidad_masculino">
-							<label for="icon_prefix">Nacionalidad</label>
+							<input  type="text" class="validate" name="nacionalidad_masculino">
+							<label for="">Nacionalidad</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="tipo_documento_masculino" id="tipo_documento_masculino" value="">
@@ -479,58 +479,58 @@
 							<label>Tipo de documento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="number" class="validate" name="numero_id_masculino">
-							<label for="icon_prefix">N&uacute;mero c&eacute;dula</label>
+							<input  type="number" class="validate" name="numero_id_masculino">
+							<label for="">N&uacute;mero c&eacute;dula</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="direccion_residencia_masculino">
-							<label for="icon_prefix">Direcci&oacute;n de residencia:</label>
+							<input  type="text" class="validate" name="direccion_residencia_masculino">
+							<label for="">Direcci&oacute;n de residencia:</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="barrio_actual_masculino">
-							<label for="icon_prefix">Barrio actual:</label>
+							<input  type="text" class="validate" name="barrio_actual_masculino">
+							<label for="">Barrio actual:</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="tel_residencia_masculino">
-							<label for="icon_prefix">Tel. de residencia actual:</label>
+							<input  type="text" class="validate" name="tel_residencia_masculino">
+							<label for="">Tel. de residencia actual:</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="celular_masculino">
-							<label for="icon_prefix">Tel. celular:</label>
-						</div>
-
-						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="email" class="validate" name="email_masculino">
-							<label for="icon_prefix">Email:</label>
+							<input  type="text" class="validate" name="celular_masculino">
+							<label for="">Tel. celular:</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="empresa_labora_masculino">
-					<label for="icon_prefix">Empresa donde trabaja:</label>
+							<input  type="email" class="validate" name="email_masculino">
+							<label for="">Email:</label>
+						</div>
+
+						<div class="input-field col s12 m4 l4 xl4">
+					<input  type="text" class="validate" name="empresa_labora_masculino">
+					<label for="">Empresa donde trabaja:</label>
 				</div>
 				<div class="input-field col s12 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="profesion_masculino">
-					<label for="icon_prefix">Profesion:</label>
+					<input  type="text" class="validate" name="profesion_masculino">
+					<label for="">Profesion:</label>
 				</div>
 				<div class="input-field col s12 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="ocupacion_actual_masculino">
-					<label for="icon_prefix">Ocupacion actual:</label>
+					<input  type="text" class="validate" name="ocupacion_actual_masculino">
+					<label for="">Ocupacion actual:</label>
 				</div>
 				<div class="input-field col s12 m12 l12 xl12">
-					<input id="icon_prefix" type="text" class="validate" name="si_no_es_empleado_masculino">
-					<label for="icon_prefix">Si no es empleado, amplíe la información sobre su actividad económica:</label>
+					<input  type="text" class="validate" name="si_no_es_empleado_masculino">
+					<label for="">Si no es empleado, amplíe la información sobre su actividad económica:</label>
 				</div>
 				<div class="input-field col s4 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="ingreso_promedio_mensual_masculino">
-					<label for="icon_prefix">Ingreso promedio mensuales - Salario</label>
+					<input  type="text" class="validate" name="ingreso_promedio_mensual_masculino">
+					<label for="">Ingreso promedio mensuales - Salario</label>
 				</div>
 				<div class="input-field col s4 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="otros_ingresos_masculino">
-					<label for="icon_prefix">Otros</label>
+					<input  type="text" class="validate" name="otros_ingresos_masculino">
+					<label for="">Otros</label>
 				</div>
 				<div class="input-field col s4 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="total_ingresos_mensuales_masculino">
-					<label for="icon_prefix">Total ingreso promedio mensuales</label>
+					<input  type="text" class="validate" name="total_ingresos_mensuales_masculino">
+					<label for="">Total ingreso promedio mensuales</label>
 				</div>
 			</div>
 		</div>
@@ -547,7 +547,7 @@
 					</h1>
 				</center>
 				<div class="input-field col s12 m8 l8 xl8">
-							<input type="hidden" name="parentesco_acudiente_femenino" id="cantidadHermanoAlumno" value="">
+							<input type="hidden" name="parentesco_acudiente_femenino" id="parentesco_acudiente_femenino" value="">
 							<select id="parentesco_acudiente_femenino_select">
 								<option value="" disabled selected>Seleccionar parentesco</option>
 								<option value="Padre">Padre</option>
@@ -559,39 +559,39 @@
 							<label>Cual es su parentesco con el/la estudiante</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="otro_parentesco_femenino">
-							<label for="icon_prefix">Otro, ¿cual?</label>
+							<input  type="text" class="validate" name="otro_parentesco_femenino">
+							<label for="">Otro, ¿cual?</label>
 						</div>
 
 
 				<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="primer_apellido_femenino">
-							<label for="icon_prefix">Primer apellido</label>
+							<input  type="text" class="validate" name="primer_apellido_femenino">
+							<label for="">Primer apellido</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="segundo_apellido_femenino">
-							<label for="icon_prefix">Segundo apellido</label>
+							<input  type="text" class="validate" name="segundo_apellido_femenino">
+							<label for="">Segundo apellido</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="nombres_femenino">
-							<label for="icon_prefix">Nombres</label>
+							<input  type="text" class="validate" name="nombres_femenino">
+							<label for="">Nombres</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="lugar_nacimiento_femenino">
-							<label for="icon_prefix">Lugar de nacimiento</label>
+							<input  type="text" class="validate" name="lugar_nacimiento_femenino">
+							<label for="">Lugar de nacimiento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="date" class="validate" name="fecha_nacimiento_femenino">
-							<label for="icon_prefix">Fecha nacimiento</label>
+							<input  type="date" class="validate" name="fecha_nacimiento_femenino">
+							<label for="">Fecha nacimiento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="edad_femenino">
-							<label for="icon_prefix">Edad</label>
+							<input  type="text" class="validate" name="edad_femenino">
+							<label for="">Edad</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="nacionalidad_femenino">
-							<label for="icon_prefix">Nacionalidad</label>
+							<input  type="text" class="validate" name="nacionalidad_femenino">
+							<label for="">Nacionalidad</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="tipo_documento_femenino" id="tipo_documento_femenino" value="">
@@ -604,58 +604,58 @@
 							<label>Tipo de documento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="number" class="validate" name="numero_id_femenino">
-							<label for="icon_prefix">N&uacute;mero c&eacute;dula</label>
+							<input  type="number" class="validate" name="numero_id_femenino">
+							<label for="">N&uacute;mero c&eacute;dula</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="direccion_residencia_femenino">
-							<label for="icon_prefix">Direcci&oacute;n de residencia:</label>
+							<input  type="text" class="validate" name="direccion_residencia_femenino">
+							<label for="">Direcci&oacute;n de residencia:</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="barrio_actual_femenino">
-							<label for="icon_prefix">Barrio actual:</label>
+							<input  type="text" class="validate" name="barrio_actual_femenino">
+							<label for="">Barrio actual:</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="tel_residencia_femenino">
-							<label for="icon_prefix">Tel. de residencia actual:</label>
+							<input  type="text" class="validate" name="tel_residencia_femenino">
+							<label for="">Tel. de residencia actual:</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="celular_femenino">
-							<label for="icon_prefix">Tel. celular:</label>
-						</div>
-
-						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="email" class="validate" name="email_femenino">
-							<label for="icon_prefix">Email:</label>
+							<input  type="text" class="validate" name="celular_femenino">
+							<label for="">Tel. celular:</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="empresa_labora_femenino">
-					<label for="icon_prefix">Empresa donde trabaja:</label>
+							<input  type="email" class="validate" name="email_femenino">
+							<label for="">Email:</label>
+						</div>
+
+						<div class="input-field col s12 m4 l4 xl4">
+					<input  type="text" class="validate" name="empresa_labora_femenino">
+					<label for="">Empresa donde trabaja:</label>
 				</div>
 				<div class="input-field col s12 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="profesion_femenino">
-					<label for="icon_prefix">Profesion:</label>
+					<input  type="text" class="validate" name="profesion_femenino">
+					<label for="">Profesion:</label>
 				</div>
 				<div class="input-field col s12 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="ocupacion_actual_femenino">
-					<label for="icon_prefix">Ocupacion actual:</label>
+					<input  type="text" class="validate" name="ocupacion_actual_femenino">
+					<label for="">Ocupacion actual:</label>
 				</div>
 				<div class="input-field col s12 m12 l12 xl12">
-					<input id="icon_prefix" type="text" class="validate" name="si_no_es_empleado_femenino">
-					<label for="icon_prefix">Si no es empleado, amplíe la información sobre su actividad económica:</label>
+					<input  type="text" class="validate" name="si_no_es_empleado_femenino">
+					<label for="">Si no es empleado, amplíe la información sobre su actividad económica:</label>
 				</div>
 				<div class="input-field col s4 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="ingreso_promedio_mensual_femenino">
-					<label for="icon_prefix">Ingreso promedio mensuales - Salario</label>
+					<input  type="text" class="validate" name="ingreso_promedio_mensual_femenino">
+					<label for="">Ingreso promedio mensuales - Salario</label>
 				</div>
 				<div class="input-field col s4 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="otros_ingresos_femenino">
-					<label for="icon_prefix">Otros</label>
+					<input  type="text" class="validate" name="otros_ingresos_femenino">
+					<label for="">Otros</label>
 				</div>
 				<div class="input-field col s4 m4 l4 xl4">
-					<input id="icon_prefix" type="text" class="validate" name="total_ingresos_mensuales_femenino">
-					<label for="icon_prefix">Total ingreso promedio mensuales</label>
+					<input  type="text" class="validate" name="total_ingresos_mensuales_femenino">
+					<label for="">Total ingreso promedio mensuales</label>
 				</div>
 			</div>
 		</div>
@@ -684,39 +684,39 @@
 							<label>Cual es su parentesco con el/la estudiante</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="otro_parentesco_financiero">
-							<label for="icon_prefix">Otro, ¿cual?</label>
+							<input  type="text" class="validate" name="otro_parentesco_financiero">
+							<label for="">Otro, ¿cual?</label>
 						</div>
 
 
 				<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="primer_apellido_financiero">
-							<label for="icon_prefix">Primer apellido</label>
+							<input  type="text" class="validate" name="primer_apellido_financiero">
+							<label for="">Primer apellido</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="segundo_apellido_financiero">
-							<label for="icon_prefix">Segundo apellido</label>
+							<input  type="text" class="validate" name="segundo_apellido_financiero">
+							<label for="">Segundo apellido</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="nombres_financiero">
-							<label for="icon_prefix">Nombres</label>
+							<input  type="text" class="validate" name="nombres_financiero">
+							<label for="">Nombres</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="lugar_nacimiento_financiero">
-							<label for="icon_prefix">Lugar de nacimiento</label>
+							<input  type="text" class="validate" name="lugar_nacimiento_financiero">
+							<label for="">Lugar de nacimiento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="date" class="validate" name="fecha_nacimiento_financiero">
-							<label for="icon_prefix">Fecha nacimiento</label>
+							<input  type="date" class="validate" name="fecha_nacimiento_financiero">
+							<label for="">Fecha nacimiento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="edad_financiero">
-							<label for="icon_prefix">Edad</label>
+							<input  type="text" class="validate" name="edad_financiero">
+							<label for="">Edad</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="nacionalidad_financiero">
-							<label for="icon_prefix">Nacionalidad</label>
+							<input  type="text" class="validate" name="nacionalidad_financiero">
+							<label for="">Nacionalidad</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="tipo_documento_financiero" id="tipo_documento_financiero" value="">
@@ -729,29 +729,29 @@
 							<label>Tipo de documento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="number" class="validate" name="numero_id_financiero">
-							<label for="icon_prefix">N&uacute;mero Cèdula</label>
+							<input  type="number" class="validate" name="numero_id_financiero">
+							<label for="">N&uacute;mero Cèdula</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="direccion_residencia_financiero">
-							<label for="icon_prefix">Direcci&oacute;n de residencia:</label>
+							<input  type="text" class="validate" name="direccion_residencia_financiero">
+							<label for="">Direcci&oacute;n de residencia:</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="barrio_actual_financiero">
-							<label for="icon_prefix">Barrio actual:</label>
+							<input  type="text" class="validate" name="barrio_actual_financiero">
+							<label for="">Barrio actual:</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="tel_residencia_financiero">
-							<label for="icon_prefix">Tel. de residencia actual:</label>
+							<input  type="text" class="validate" name="tel_residencia_financiero">
+							<label for="">Tel. de residencia actual:</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="text" class="validate" name="celular_financiero">
-							<label for="icon_prefix">Tel. celular:</label>
+							<input  type="text" class="validate" name="celular_financiero">
+							<label for="">Tel. celular:</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="email" class="validate" name="email_financiero">
-							<label for="icon_prefix">Email:</label>
+							<input  type="email" class="validate" name="email_financiero">
+							<label for="">Email:</label>
 						</div>
 			</div>
 		</div>

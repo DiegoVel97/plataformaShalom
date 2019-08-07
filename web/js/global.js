@@ -421,8 +421,10 @@ $(document).ready(function(){
                 var respuesta = $.parseJSON(response);
 
                 if (respuesta.accion === true) {
-                    Materialize.toast(respuesta.mensajes, 1500, 'rounded col green');
                     
+                    setTimeout(Materialize.toast(respuesta.mensajes, 2500, 'rounded col green'), 1000);
+                    setTimeout(Materialize.toast(window.location.reload(), 3000);
+
                 } else {
                     $('#cont_errors_ajax').html(respuesta.mensajes);
                     $('#cont_errors_ajax').css('display', 'block');
@@ -440,7 +442,7 @@ $(document).ready(function(){
 
     $(".file-form-solicitud").on('submit', function () {
         
-        $('.btn_submit_file_solicitud').prop('disabled', true);
+
         var url = $("#formularioSolicitudCupo").attr("data-action");
 
         var options = {
@@ -451,11 +453,10 @@ $(document).ready(function(){
 
                 if (respuesta.accion === true) {
                     Materialize.toast(respuesta.mensajes, 1500, 'rounded col green');
-                    window.location.reload();
                 } else {
                     $('#cont_errors_ajax').html(respuesta.mensajes);
                     $('#cont_errors_ajax').css('display', 'block');
-                    $('.btn_submit_file_solicitud').prop('disabled', false);
+
                     $('html, body').animate({scrollTop: $('#cont_errors_ajax').position().top}, 'slow');
                 }
 
