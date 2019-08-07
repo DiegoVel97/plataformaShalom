@@ -1673,7 +1673,7 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                 
             /* FIN HISTORIAL INDEPENDENDIENTE * /
 
-            /* INSERCION DOCUMENTACION ESTUDIANTES INCLUSION*/
+            /* INSERCION DOCUMENTACION ESTUDIANTES*/
 
             $fotocopia_historial_clinico = $_FILES['fotocopia_historial_clinico']['name'];
             $fotocopia_informe_avances_terapeuticos = $_FILES['fotocopia_informe_avances']['name'];
@@ -1744,7 +1744,7 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                 $consulta = $objMatricula->find($sql);
                 $id_documento_alumno = $consulta[0];
 
-            /* FIN INSERCION DOCUMENTACION ESTUDIANTES INCLUSION*/
+            /* FIN INSERCION DOCUMENTACION ESTUDIANTES*/
 
 
         /*INSERCION TABLA DATOS DEL ACUDIENTE MASCULINO*/
@@ -1821,8 +1821,138 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
 
         /*FIN INSERCION TABLA DATOS DEL ACUDIENTE MASCULINO*/
 
+        /* INSERCION TABLA DE DATOS DEL ACUDIENTE FEMENINO*/
+            $parentesco_acudiente_femenino = $_POST['parentesco_acudiente_femenino'];
+            $otro_parentesco_femenino = $_POST['otro_parentesco_femenino'];
+            $primer_apellido_femenino = $_POST['primer_apellido_femenino'];
+            $segundo_apellido_femenino = $_POST['segundo_apellido_femenino'];
+            $nombres_femenino = $_POST['nombres_femenino'];
+            $lugar_nacimiento_femenino = $_POST['lugar_nacimiento_femenino'];
+            $fecha_nacimiento_femenino = $_POST['fecha_nacimiento_femenino'];
+            $edad_femenino = $_POST['edad_femenino'];
+            $nacionalidad_femenino = $_POST['nacionalidad_femenino'];
+            $tipo_documento_femenino = $_POST['tipo_documento_femenino'];
+            $numero_id_femenino = $_POST['numero_id_femenino'];
+            $direccion_residencia_femenino = $_POST['direccion_residencia_femenino'];
+            $barrio_actual_femenino = $_POST['barrio_actual_femenino'];
+            $tel_residencia_femenino = $_POST['tel_residencia_femenino'];
+            $celular_femenino = $_POST['celular_femenino'];
+            $email_femenino = $_POST['email_femenino'];
+            $empresa_labora_femenino = $_POST['empresa_labora_femenino'];
+            $profesion_femenino = $_POST['profesion_femenino'];
+            $ocupacion_actual_femenino = $_POST['ocupacion_actual_femenino'];
+            $si_no_es_empleado_femenino = $_POST['si_no_es_empleado_femenino'];
+            $ingreso_promedio_mensual_femenino = $_POST['ingreso_promedio_mensual_femenino'];
+            $otros_ingresos_femenino = $_POST['otros_ingresos_femenino'];
+            $total_ingresos_mensuales_femenino = $_POST['total_ingresos_mensuales_femenino'];
+            $nombres_apellidos_femenino=$nombres_femenino." ".$primer_apellido_femenino." ".$segundo_apellido_femenino;
+            $estado_civil_femenino="No Registra";
+            $estrato_social_femenino="No Registra";
+            $telefono_oficina_actual_femenino="No registra";
+            $id_documentacion_independiente_femenino="0";
 
-        
+               
+
+                $sql_insercion_formulario = "INSERT INTO datos_acudiente_femenino (
+                                          id_persona_femenino, 
+                                          tipo_documento_femenino,
+                                          nombres_apellidos_femenino,
+                                          estado_civil_femenino,
+                                          direccion_residencia_femenino,
+                                          estrato_social_femenino,
+                                          telefono_residencia_femenino,
+                                          telefono_oficina_actual_femenino,
+                                          numero_celular_femenino,
+                                          correo_persona_femenino,
+                                          empresa_donde_trabaja_femenino,
+                                          profesion_persona_femenino,
+                                          ocupacion_actual_femenino,
+                                          id_documentacion_independiente_femenino,
+                                          actividad_economica_femenino,
+                                          ingreso_promedio_femenino,
+                                          otros_ingresos_femenino,
+                                          total_ingresos_femenino,
+                                          estado_femenino)VALUES(
+                                          $numero_id_femenino,
+                                          '$tipo_documento_femenino',
+                                          '$nombres_apellidos_femenino',
+                                          '$estado_civil_femenino',
+                                          '$direccion_residencia_femenino',
+                                          '$tel_residencia_femenino',
+                                          '$telefono_oficina_actual_femenino',
+                                          '$celular_femenino',
+                                          '$email_femenino',
+                                          '$empresa_labora_femenino',
+                                          '$profesion_femenino',
+                                          '$ocupacion_actual_femenino',
+                                          '$id_documentacion_independiente_femenino',
+                                          '$si_no_es_empleado_femenino',
+                                          '$ingreso_promedio_mensual_femenino',
+                                          '$otros_ingresos_femenino',
+                                          '$total_ingresos_mensuales_femenino',
+                                          'Activo')";
+            $insercion_formulario = $objMatricula->insertar($sql_insercion_formulario);
+
+
+        /* FIN INSERCION TABLA DE DATOS DEL ACUDIENTE FEMENINO*/
+
+        /* INSERCION TABLA DE DATOS DEL ACUDIENTE FINANCIERO*/
+            $parentesco_acudiente_financiero = $_POST['parentesco_acudiente_financiero'];
+            $otro_parentesco_financiero = $_POST['otro_parentesco_financiero'];
+            $primer_apellido_financiero = $_POST['primer_apellido_financiero'];
+            $segundo_apellido_financiero = $_POST['segundo_apellido_financiero'];
+            $nombres_financiero = $_POST['nombres_financiero'];
+            $lugar_nacimiento_financiero = $_POST['lugar_nacimiento_financiero'];
+            $fecha_nacimiento_financiero = $_POST['fecha_nacimiento_financiero'];
+            $edad_financiero = $_POST['edad_financiero'];
+            $nacionalidad_financiero = $_POST['nacionalidad_financiero'];
+            $tipo_documento_financiero = $_POST['tipo_documento_financiero'];
+            $numero_id_financiero = $_POST['numero_id_financiero'];
+            $direccion_residencia_financiero = $_POST['direccion_residencia_financiero'];
+            $barrio_actual_financiero = $_POST['barrio_actual_financiero'];
+            $tel_residencia_financiero = $_POST['tel_residencia_financiero'];
+            $celular_financiero = $_POST['celular_financiero'];
+            $email_financiero = $_POST['email_financiero'];
+            $nombres_apellidos_financiero=$nombres_financiero." ".$primer_apellido_financiero." ".$segundo_apellido_financiero;
+            $estado_civil_financiero="No Registra";
+            $estrato_social_financiero="No Registra";
+            $telefono_oficina_actual="No registra";
+            
+
+               
+
+                $sql_insercion_formulario = "INSERT INTO datos_acudiente_financiero (
+                                          id_acudiente_financiero, 
+                                          nombre_acudiente_financiero,
+                                          primer_apellido_acudiente_financiero,
+                                          lugar_nacimiento_acudiente_financiero,
+                                          fecha_nacimiento_acudiente_financiero,
+                                          edad_acudiente_financiero,
+                                          nacionalidad_acudiente_financiero,
+                                          tipo_documento_acudiente_financiero,
+                                          direccion_residencia_acudiente_financiero,
+                                          barrio_acudiente_financiero,
+                                          telefono_acudiente_financiero,
+                                          celular_acudiente_financiero,
+                                          estado_acudiente_financiero)VALUES(
+                                          $numero_id_financiero,
+                                          '$nombres_financiero',
+                                          '$primer_apellido_financiero',
+                                          '$lugar_nacimiento_financiero',
+                                          '$fecha_nacimiento_financiero',
+                                          '$edad_financiero',
+                                          '$nacionalidad_financiero',
+                                          '$tipo_documento_financiero',
+                                          '$direccion_residencia_financiero',
+                                          '$barrio_actual_financiero',
+                                          '$tel_residencia_financiero',
+                                          '$celular_financiero',
+                                          'Activo')";
+                                          
+            $insercion_formulario = $objMatricula->insertar($sql_insercion_formulario);
+
+
+        /* FIN INSERCION TABLA DE DATOS DEL ACUDIENTE FINANCIERO*/
 
         /* INSERCION TABLA FORMULARIO DE SOLICITUD */
         
