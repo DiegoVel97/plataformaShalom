@@ -874,7 +874,7 @@
 				</div>
 				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
-						<span>Foto tipo documento padre</span>
+						<span>Foto padre 3x4</span>
 						<input type="file" name="cedulaPadre150File">
 					</div>
 					<div class="file-path-wrapper">
@@ -892,7 +892,7 @@
 				</div>
 				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
-						<span>Foto tipo documento madre</span>
+						<span>Foto madre 3x4</span>
 						<input type="file" name="cedulaPadre150File">
 					</div>
 					<div class="file-path-wrapper">
