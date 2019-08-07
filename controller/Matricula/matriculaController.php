@@ -1558,11 +1558,11 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
             if(!isset($_FILES['carta_laboral_madre_alumno']) or $_FILES['carta_laboral_madre_alumno'] == ""){
                 $carta_laboral_madre = "No registra";
             }else{
-                $carta_laboral_padre = $_FILES['carta_laboral_madre_alumno']['name'];
+                $carta_laboral_madre = $_FILES['carta_laboral_madre_alumno']['name'];
             } 
 
 
-            $recibo_publico_alumno = $_FILES['recibo_publico_alumno'];
+            $recibo_publico_alumno = $_FILES['recibo_publico_alumno']['name'];
             $estado = "activo";
 
             $sql_documentos = "INSERT INTO documentacion (
@@ -1694,9 +1694,9 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
 
         $grado_procedencia = $_POST['grado_procedencia']."/".$_POST['grado_procedencia2']."/".$_POST['grado_procedencia3']."/".$_POST['grado_procedencia4'];
 
-        $institucion_procedencia = $_POST['institucion_procedencia']."/".$_POST['institucion_procedencia2']."/".$_POST['institucion_procedencia3']."/".$_POST['institucion_procedencia4'];
+        $institucion_procedencia = $_POST['institucion_procedencia']."/".$_POST['institucion_procedencia2']."/".$_POST['institucion_procedencia3']."/".$_POST['institucion_educativa_procedencia4'];
 
-        $ano_lectivo_procedencia = $_POST['ano_lectivo_procedencia']."/".$_POST['ano_lectivo_procedencia2']."/".$_POST['ano_lectivo_procedencia3']."/".$_POST['ano_lectivo_procedenci4'];
+        $ano_lectivo_procedencia = $_POST['ano_lectivo_procedencia']."/".$_POST['ano_lectivo_procedencia2']."/".$_POST['ano_lectivo_procedencia3']."/".$_POST['ano_lectivo_procedencia4'];
 
 
 
@@ -1995,7 +1995,7 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                 $alumno_referido = $_POST['alumno_referido_alumno'];
             }
 
-            $foto_aluno = $_FILES['foto_alumno']['name'];
+            $foto_alumno = $_FILES['foto_alumno']['name'];
 
 
 
