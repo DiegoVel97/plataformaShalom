@@ -1769,6 +1769,7 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                                       '$nombres_apellidos',
                                       '$estado_civil',
                                       '$direccion_residencia_masculino',
+                                      '$estrato_social',
                                       '$tel_residencia_masculino',
                                       '$telefono_oficina_actual',
                                       '$celular_masculino',
@@ -1783,7 +1784,7 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                                       '$total_ingresos_mensuales_masculino',
                                       'Activo')";
             $insercion_formulario = $objMatricula->insertar($sql_insercion_formulario);
-
+           
         /*FIN INSERCION TABLA DATOS DEL ACUDIENTE MASCULINO*/
 
 
@@ -1848,6 +1849,7 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                                           '$nombres_apellidos_femenino',
                                           '$estado_civil_femenino',
                                           '$direccion_residencia_femenino',
+                                          '$estrato_social_femenino',
                                           '$tel_residencia_femenino',
                                           '$telefono_oficina_actual_femenino',
                                           '$celular_femenino',
@@ -1928,8 +1930,8 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
         /* INSERCION TABLA FORMULARIO DE SOLICITUD */
         
         $id_cedula_masculino = $_POST['numero_id_masculino'];
-        $id_cedula_femenino = $_POST['numero_id_masculino'];
-        $id_cedula_financiero = $_POST['numero_id_masculino'];
+        $id_cedula_femenino = $_POST['numero_id_femenino'];
+        $id_cedula_financiero = $_POST['numero_id_financiero'];
         $id_documentacion = $id_documento_alumno;
         $id_documentacion_especial = $id_documentacion_inclusion;
 
