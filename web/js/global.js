@@ -423,7 +423,7 @@ $(document).ready(function(){
                 if (respuesta.accion === true) {
                     
                     Materialize.toast(respuesta.mensajes, 2500, 'rounded col green');
-                    setTimeout(Materialize.toast(window.location.reload(), 3000);
+                    setTimeout(window.location.reload(), 3000);
 
                 } else {
                     $('#cont_errors_ajax').html(respuesta.mensajes);
