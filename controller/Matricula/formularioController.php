@@ -174,7 +174,7 @@ class formularioController {
    function listadoSolicitud(){
         $objFormulario = new matriculaModel();
 
-  $query = "SELECT * FROM formulario_solicitud, pag_tipo_documento, pag_grados_colegio, pag_terapia, pag_grupos_etnicos, pag_eps, pag_tipo_sangre, pag_rh_sangre, pag_tipo_escritura, datos_acudiente_femenino, datos_acudiente_financiero, datos_acudiente_masculino, documentacion, documentacion_independiente, documentacion_inclusion_especial WHERE formulario_solicitud.tipo_documento=pag_tipo_documento.id_tipo_documento AND formulario_solicitud.grado_ingreso=pag_grados_colegio.id_grado_colegio AND formulario_solicitud.terapia_alumno=pag_terapia.id_terapia AND formulario_solicitud.grupo_etnico_alumno=pag_grupos_etnicos.id_grupos_etnicos AND formulario_solicitud.eps_alumno=pag_eps.id_eps AND formulario_solicitud.tipo_sangre_alumno=pag_tipo_sangre.id_sangre AND formulario_solicitud.rh_sangre_alumno=pag_rh_sangre.id_rh_sangre AND formulario_solicitud.tipo_escritura_alumno=pag_tipo_documento.id_tipo_documento AND formulario_solicitud.id_acudiente_femenino=datos_acudiente_femenino.id_persona_femenino AND formulario_solicitud.id_acudiente_financiero=datos_acudiente_financiero.id_acudiente_financiero AND formulario_solicitud.id_acudiente_masculino=datos_acudiente_masculino.id_persona_masculina AND formulario_solicitud.id_documentacion=documentacion.id_documento AND datos_acudiente_masculino.id_documentacion_independiente=documentacion_independiente.id_documentacion_independiente";
+  $query = "SELECT * FROM formulario_solicitud, datos_acudiente_femenino WHERE formulario_solicitud.id_acudiente_femenino=datos_acudiente_femenino.id_persona_femenino;";
     $consultaFormularios = $objFormulario->select($query);
 
       //aqui empieza el paginado       
