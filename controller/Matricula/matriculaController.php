@@ -2269,12 +2269,199 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
 
 
 
+            $cedula_madre_alumno = $_FILES['cedula_madre_alumno']['name'];
+            $TMP_NAME_cedula_madre_alumno = $_FILES['cedula_madre_alumno']['tmp_name'];
+            $ruta_cedula_madre_alumno = $carpeta."/cedula_madre_alumno-".$cedula_madre_alumno;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_cedula_madre_alumno, $ruta_cedula_madre_alumno)) {
+                }
+            } else {
+                
+            }
 
 
 
+            $cedulaMadre150File = $_FILES['cedulaMadre150File']['name'];
+            $TMP_NAME_cedulaMadre150File = $_FILES['cedulaMadre150File']['tmp_name'];
+            $ruta_cedulaMadre150File = $carpeta."/cedulaMadre150File-".$cedulaMadre150File;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_cedulaMadre150File, $ruta_cedulaMadre150File)) {
+                }
+            } else {
+                
+            }
 
 
-        }
+
+            $carta_laboral_padre_alumno = $_FILES['carta_laboral_padre_alumno']['name'];
+            $TMP_NAME_carta_laboral_padre_alumno = $_FILES['carta_laboral_padre_alumno']['tmp_name'];
+            $ruta_carta_laboral_padre_alumno = $carpeta."/carta_laboral_padre_alumno-".$carta_laboral_padre_alumno;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_carta_laboral_padre_alumno, $ruta_carta_laboral_padre_alumno)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $carta_laboral_madre_alumno = $_FILES['carta_laboral_madre_alumno']['name'];
+            $TMP_NAME_carta_laboral_madre_alumno = $_FILES['carta_laboral_madre_alumno']['tmp_name'];
+            $ruta_carta_laboral_madre_alumno = $carpeta."/carta_laboral_madre_alumno-".$carta_laboral_madre_alumno;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_carta_laboral_madre_alumno, $ruta_carta_laboral_madre_alumno)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $comprobante_pago_alumno = $_FILES['comprobante_pago_alumno']['name'];
+            $TMP_NAME_comprobante_pago_alumno = $_FILES['comprobante_pago_alumno']['tmp_name'];
+            $ruta_comprobante_pago_alumno = $carpeta."/comprobante_pago_alumno-".$ruta_comprobante_pago_alumno;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_comprobante_pago_alumno, $ruta_comprobante_pago_alumno)) {
+                }
+            } else {
+                
+            }
+
+
+            $fotocopia_informe_avances = $_FILES['fotocopia_informe_avances']['name'];
+            $TMP_NAME_fotocopia_informe_avances = $_FILES['fotocopia_informe_avances']['tmp_name'];
+            $ruta_fotocopia_informe_avances = $carpeta."/fotocopia_informe_avances-".$ruta_fotocopia_informe_avances;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_fotocopia_informe_avances, $ruta_fotocopia_informe_avances)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $fotocopia_fonoaudiologia = $_FILES['fotocopia_fonoaudiologia']['name'];
+            $TMP_NAME_fotocopia_fonoaudiologia = $_FILES['fotocopia_fonoaudiologia']['tmp_name'];
+            $ruta_fotocopia_fonoaudiologia = $carpeta."/fotocopia_fonoaudiologia-".$ruta_fotocopia_fonoaudiologia;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_fotocopia_fonoaudiologia, $ruta_fotocopia_fonoaudiologia)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $fotocopia_examen_psicologia = $_FILES['fotocopia_examen_psicologia']['name'];
+            $TMP_NAME_fotocopia_examen_psicologia = $_FILES['fotocopia_examen_psicologia']['tmp_name'];
+            $ruta_fotocopia_examen_psicologia = $carpeta."/fotocopia_examen_psicologia-".$ruta_fotocopia_examen_psicologia;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_fotocopia_examen_psicologia, $ruta_fotocopia_examen_psicologia)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $evaluacion_neurosicologica = $_FILES['evaluacion_neurosicologica']['name'];
+            $TMP_NAME_evaluacion_neurosicologica = $_FILES['evaluacion_neurosicologica']['tmp_name'];
+            $ruta_evaluacion_neurosicologica = $carpeta."/evaluacion_neurosicologica-".$ruta_evaluacion_neurosicologica;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_evaluacion_neurosicologica, $ruta_evaluacion_neurosicologica)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $otro_documentos_inclusion = $_FILES['otro_documentos_inclusion']['name'];
+            $TMP_NAME_otro_documentos_inclusion = $_FILES['otro_documentos_inclusion']['tmp_name'];
+            $ruta_otro_documentos_inclusion = $carpeta."/otro_documentos_inclusion-".$ruta_otro_documentos_inclusion;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_otro_documentos_inclusion, $ruta_otro_documentos_inclusion)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $seleccionIndependiente = $_FILES['seleccionIndependiente']['name'];
+            $TMP_NAME_seleccionIndependiente = $_FILES['seleccionIndependiente']['tmp_name'];
+            $ruta_otro_seleccionIndependiente = $carpeta."/seleccionIndependiente-".$ruta_seleccionIndependiente;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_seleccionIndependiente, $ruta_seleccionIndependiente)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $seleccionIndependiente = $_FILES['seleccionIndependiente']['name'];
+            $TMP_NAME_seleccionIndependiente = $_FILES['seleccionIndependiente']['tmp_name'];
+            $ruta_otro_seleccionIndependiente = $carpeta."/seleccionIndependiente-".$ruta_seleccionIndependiente;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_seleccionIndependiente, $ruta_seleccionIndependiente)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $declaracion_renta = $_FILES['declaracion_renta']['name'];
+            $TMP_NAME_declaracion_renta = $_FILES['declaracion_renta']['tmp_name'];
+            $ruta_otro_declaracion_renta = $carpeta."/declaracion_renta-".$ruta_declaracion_renta;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_declaracion_renta, $ruta_declaracion_renta)) {
+                }
+            } else {
+                
+            }
+
+
+            $certificado_ingreso_avalado = $_FILES['certificado_ingreso_avalado']['name'];
+            $TMP_NAME_certificado_ingreso_avalado = $_FILES['certificado_ingreso_avalado']['tmp_name'];
+            $ruta_certificado_ingreso_avalado = $carpeta."/certificado_ingreso_avalado-".$ruta_certificado_ingreso_avalado;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_certificado_ingreso_avalado, $ruta_certificado_ingreso_avalado)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $tarjeta_profesional = $_FILES['tarjeta_profesional']['name'];
+            $TMP_NAME_tarjeta_profesional = $_FILES['tarjeta_profesional']['tmp_name'];
+            $ruta_tarjeta_profesional = $carpeta."/tarjeta_profesional-".$ruta_tarjeta_profesional;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_tarjeta_profesional, $ruta_tarjeta_profesional)) {
+                }
+            } else {
+                
+            }
+
+
+         }
 
         $objMatricula->cerrar();
         echo getRespuestaAccion('listar');
