@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-08-2019 a las 23:07:43
+-- Tiempo de generación: 07-08-2019 a las 03:06:39
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.7
 
@@ -55,7 +55,9 @@ CREATE TABLE `datos_acudiente_femenino` (
 --
 
 INSERT INTO `datos_acudiente_femenino` (`id_persona_femenino`, `tipo_documento_femenino`, `nombres_apellidos_femenino`, `estado_civil_femenino`, `direccion_residencia_femenino`, `estrato_social_femenino`, `telefono_residencia_femenino`, `telefono_oficina_actual_femenino`, `numero_celular_femenino`, `correo_persona_femenino`, `empresa_donde_trabaja_femenino`, `profesion_persona_femenino`, `ocupacion_actual_femenino`, `id_documentacion_independiente_femenino`, `actividad_economica_femenino`, `ingreso_promedio_femenino`, `otros_ingresos_femenino`, `total_ingresos_femenino`, `estado_femenino`) VALUES
-(31982208, '1', 'Sol Marina', '1', 'Cra 23 # ', '2', '5676565', '3456545', '3006227815', 'sol@hotmail.com', 'No', 'No', 'no', 1, NULL, NULL, NULL, NULL, 'activo');
+(555555, '1', 'asdfasdf', '1', 'dsgfsgdfsg', '1', 'dsgffsdgsgdh', 'fadsf', 'gsdfg', 'diego@gmail.com', 'sdfadsf', 'dsaf', 'adsf', 0, NULL, NULL, NULL, NULL, 'activo'),
+(31982208, '1', 'Sol Marina', '1', 'Cra 23 # ', '2', '5676565', '3456545', '3006227815', 'sol@hotmail.com', 'No', 'No', 'no', 1, NULL, NULL, NULL, NULL, 'activo'),
+(87686787, '1', 'Sol marina', '1', 'jgjhj', '3', '798989', 'jnjjhj', 'hjhjhjhjjh', 'diego@gmail.com', 'iojkj', 'kjkjk', 'kjk', 0, NULL, NULL, NULL, NULL, 'activo');
 
 -- --------------------------------------------------------
 
@@ -112,6 +114,8 @@ CREATE TABLE `datos_acudiente_masculino` (
 --
 
 INSERT INTO `datos_acudiente_masculino` (`id_persona_masculina`, `tipo_documento`, `nombres_apellidos`, `estado_civil`, `direccion_residencia`, `estrato_social`, `telefono_residencia`, `telefono_oficina_actual`, `numero_celular`, `correo_persona`, `empresa_donde_trabaja`, `profesion_persona`, `ocupacion_actual`, `id_documentacion_independiente`, `actividad_economica`, `ingreso_promedio`, `otros_ingresos`, `total_ingresos`, `estado`) VALUES
+(87887, '1', 'Jorge', '1', 'JJJJN', '3', '8767', '9876876', '8989789', 'diego@gmail.com', 'JH', 'JHJ', 'J', 0, NULL, NULL, NULL, NULL, 'activo'),
+(6576555, '2', 'adsfasf', '1', 'asdfafdf', '1', 'asdf', 'asdf', 'asdf', 'diego@gmail.com', 'ddf', 'fsaf', 'adfsf', 0, NULL, NULL, NULL, NULL, 'activo'),
 (94281939, '1', 'Jorge Velez', '1', 'Cra 23 # 52 - 23', '2', '4356576', '4675645', '3178430551', 'joevel9@hotmail.com', 'Jorvel pinturas y acabados sas', 'ontratista', 'ontratista', 1, NULL, NULL, NULL, NULL, 'activo');
 
 -- --------------------------------------------------------
@@ -142,6 +146,8 @@ CREATE TABLE `datos_adulto_responsable` (
 --
 
 INSERT INTO `datos_adulto_responsable` (`id_persona`, `tipo_documento`, `nombres_apellidos`, `estado_civil`, `direccion_residencia`, `estrato_social`, `telefono_residencia`, `telefono_oficina_actual`, `numero_celular`, `correo_persona`, `empresa_donde_trabaja`, `profesion_persona`, `ocupacion_actual`, `estado`) VALUES
+(987897, '1', 'adulto', '1', 'hbhbhbh', '3', '8978897', '9769869', '9889', 'diego@gmail.com', 'klnkn', 'klnkl', 'kln', 'activo'),
+(223343435, '1', 'adsfasdfdasf', '1', 'asdfasf', '1', 'asdfadfs', 'adsfa', 'fasdfasdf', 'diego@gmail.com', 'adsfads', 'fadsfads', 'sadf', 'activo'),
 (1111057654, '1', 'Valeria Marin', '1', 'Calle 52 ', '4', '4567656', '678765656', '31784366175', 'Independiente@hotmail.com', 'Claro', 'claro', 'claro', 'activo');
 
 -- --------------------------------------------------------
@@ -195,6 +201,7 @@ CREATE TABLE `datos_alumno` (
 --
 
 INSERT INTO `datos_alumno` (`id_alumno`, `tipo_documento`, `foto_alumno`, `primer_nombre`, `segundo_nombre`, `primer_apellido`, `segundo_apellido`, `fecha_nacimiento`, `ciudad_expedicion_documento`, `correo`, `grado_que_ingreso`, `ciudad_residencia`, `comuna_localidad`, `direccion_residencia`, `barrio_actual`, `telefono_residencia_actual`, `nro_hermanos`, `estudiante_permanece_en_la_tarde`, `presenta_discapacidad`, `pertenece_grupos_etnicos`, `ha_recibido_terapia_de`, `condicion_medica`, `condicion_medica_relevante`, `condicion_medica_cuidado`, `actualmente_terapia`, `cual_terapia`, `tipo_sangre`, `rh_sangre`, `eps`, `cual_eps`, `tipo_escritura`, `ano_lectivo`, `id_acudiente_masculino`, `id_acudiente_femenino`, `id_adulto_responsable`, `id_documentos`, `estado`) VALUES
+(90000000, '1', '56c65b109d0f7.jpeg', 'kjbkjj', 'jhj', 'hjh', 'jjhj', '1993-12-12', 'kmkmkmk', 'diego@gmail.com', '1', 'bjbjbjbj', 'jbjbj', 'jbj', 'bj', 'mjnj', '4', 'papa', '3', 1, '1', '1', '1', '1', '1', 'No registra', '2', '1', '1', 'No registra', '2', '2019_2020', 6576555, 555555, 223343435, 3, 'activo'),
 (1234188670, '1', '56c65b109d0f7.jpeg', 'Diego', 'No registra', 'Velez', 'barrera', '1996-12-13', 'Cali', 'diego@gmail.com', '2', 'Cali', 'Comuna 13', 'Cra 23 # 52 - 23', 'Trebol', '4357654', '2', 'Papa', '8', 6, '7', '2', '2', '2', '2', 'No registra', '4', '1', '2', 'No registra', '1', '2019_2020', 94281939, 31982208, 1111057654, 1, 'activo');
 
 -- --------------------------------------------------------
@@ -266,7 +273,9 @@ CREATE TABLE `documentacion` (
 --
 
 INSERT INTO `documentacion` (`id_documento`, `fotocopia_ultimo_informe_academico`, `certificado_ultimo_grado`, `fotocopia_informe_convivencia`, `fotocopia_paz_y_salvo`, `comprobante_pago_solicitud`, `registro_civil`, `tarjeta_identidad`, `carnet_vacunacion`, `carnet_eps`, `certificado_medico`, `certificado_visual`, `certificado_auditivo`, `cedula_padre`, `cedula_madre`, `carta_laboral_padre`, `carta_laboral_madre`, `recibo_publico`, `estado_documento`) VALUES
-(1, NULL, NULL, NULL, NULL, NULL, '56c65b109d0f7.jpeg', 'Marvin Martinez Franco - alturas.pdf', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', 'No registra', '56c65b109d0f7.jpeg', 'activo');
+(1, NULL, NULL, NULL, NULL, NULL, '56c65b109d0f7.jpeg', 'Marvin Martinez Franco - alturas.pdf', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', 'No registra', '56c65b109d0f7.jpeg', 'activo'),
+(2, NULL, NULL, NULL, NULL, NULL, '22.EDILBERTO JIMENEZ (1).pdf', '22.EDILBERTO JIMENEZ.pdf', 'punta-paquetes.png', 'Andres fernando ceron - alturas.pdf', 'Marvin Martinez Franco - alturas.pdf', '2650088.jpg', '2650088.jpg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', 'No registra', 'No registra', '56c65b109d0f7.jpeg', 'activo'),
+(3, NULL, NULL, NULL, NULL, NULL, '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', '900534143-JORVEL PINTURAS Y ACABADOS S.A.S_.pdf', '900534143-JORVEL PINTURAS Y ACABADOS S.A.S_.pdf', '90e63d79351eea436b7e311d5ab62568.jpg', '900534143-JORVEL PINTURAS Y ACABADOS S.A.S_.pdf', '56c65b109d0f7.jpeg', '56c65b109d0f7.jpeg', 'activo');
 
 -- --------------------------------------------------------
 
@@ -324,7 +333,9 @@ CREATE TABLE `formulario_renovacion` (
 --
 
 INSERT INTO `formulario_renovacion` (`id_formulario`, `id_alumno`, `estado_fr`) VALUES
-(1, 1234188670, 'activo');
+(1, 1234188670, 'activo'),
+(2, 1234188670, 'activo'),
+(3, 90000000, 'activo');
 
 -- --------------------------------------------------------
 
@@ -357,7 +368,13 @@ CREATE TABLE `formulario_solicitud` (
   `otro_motivo` longtext NOT NULL,
   `motivacion_matricular` longtext NOT NULL,
   `nombre_persona_referido` longtext NOT NULL,
-  `nombre_estudiante_referido` longtext NOT NULL
+  `nombre_estudiante_referido` longtext NOT NULL,
+  `id_acudiente_femenino` int(12) NOT NULL,
+  `id_acudiente_financiero` int(12) NOT NULL,
+  `id_acudiente_masculino` int(12) NOT NULL,
+  `id_documentacion` int(12) NOT NULL,
+  `id_documentacion_especial` int(12) NOT NULL,
+  `estado_alumno_solicitud` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -992,7 +1009,7 @@ ALTER TABLE `procedencia_academica_alumno`
 -- AUTO_INCREMENT de la tabla `documentacion`
 --
 ALTER TABLE `documentacion`
-  MODIFY `id_documento` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_documento` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `documentacion_inclusion_especial`
@@ -1010,7 +1027,7 @@ ALTER TABLE `documentacion_independiente`
 -- AUTO_INCREMENT de la tabla `formulario_renovacion`
 --
 ALTER TABLE `formulario_renovacion`
-  MODIFY `id_formulario` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_formulario` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `pag_controlador`
