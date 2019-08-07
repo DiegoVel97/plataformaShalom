@@ -729,8 +729,8 @@
 							<label>Tipo de documento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
-							<input id="icon_prefix" type="number" class="validate" name="numero_celular_financiero">
-							<label for="icon_prefix">N&uacute;mero celular</label>
+							<input id="icon_prefix" type="number" class="validate" name="numero_id_financiero">
+							<label for="icon_prefix">N&uacute;mero Cèdula</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input id="icon_prefix" type="text" class="validate" name="direccion_residencia_financiero">
