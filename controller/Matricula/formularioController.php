@@ -57,7 +57,7 @@ class formularioController {
         include_once('../view/Matricula/Formulario/Renovacion/detalle.html.php');
     }
 
-    function editarSolicitud($parametros = false){
+    function editar($parametros = false){
       $objFormulario = new matriculaModel();
 
           $sqlTipo = "SELECT * FROM pag_tipo_documento";
@@ -166,14 +166,17 @@ class formularioController {
 
   }
 
+
+
+/* ================================== FUNCIONES LISTADO SOLICITUD ========================== */
+
+
    function listadoSolicitud(){
         $objFormulario = new matriculaModel();
 
-/*"SELECT * FROM datos_alumno, datos_acudiente, datos_adulto_responsable, documentacion, formulario_renovacion WHERE datos_alumno.id_acudiente=datos_acudiente.id_persona AND datos_alumno.id_adulto_responsable=datos_adulto_responsable.id_persona AND datos_alumno.id_documentos=documentacion.id_documento AND datos_acudiente.id_documentacion_indpendiente=documentacion_independiente.id_documentacion_indpendiente AND datos_adulto_responsable.id_documentacion_indpendiente=documentacion_independiente.id_documentacion_indpendiente AND formulario_renovacion.id_alumno=datos_alumno.id_alumno";*/
-
-  $query =  "SELECT * FROM datos_alumno_solicitud, datos_acudiente_masculino, datos_adulto_responsable, formulario_solicitud, documentacion WHERE  datos_alumno.id_acudiente_masculino=datos_acudiente_masculino.id_persona_masculina AND datos_alumno.id_adulto_responsable=datos_adulto_responsable.id_persona AND datos_alumno.id_documentos=documentacion.id_documento AND formulario_renovacion.id_alumno=datos_alumno.id_alumno";
+  $query = "SELECT * FROM formulario_solicitud, pag_tipo_documento, pag_grados_colegio, pag_terapia, pag_grupos_etnicos, pag_eps, pag_tipo_sangre, pag_rh_sangre, pag_tipo_escritura, datos_acudiente_femenino, datos_acudiente_financiero, datos_acudiente_masculino, documentacion, documentacion_independiente, documentacion_inclusion_especial WHERE formulario_solicitud.tipo_documento=pag_tipo_documento.id_tipo_documento AND formulario_solicitud.grado_ingreso=pag_grados_colegio.id_grado_colegio AND formulario_solicitud.terapia_alumno=pag_terapia.id_terapia AND formulario_solicitud.grupo_etnico_alumno=pag_grupos_etnicos.id_grupos_etnicos AND formulario_solicitud.eps_alumno=pag_eps.id_eps AND formulario_solicitud.tipo_sangre_alumno=pag_tipo_sangre.id_sangre AND formulario_solicitud.rh_sangre_alumno=pag_rh_sangre.id_rh_sangre AND formulario_solicitud.tipo_escritura_alumno=pag_tipo_documento.id_tipo_documento AND formulario_solicitud.id_acudiente_femenino=datos_acudiente_femenino.id_persona_femenino AND formulario_solicitud.id_acudiente_financiero=datos_acudiente_financiero.id_acudiente_financiero AND formulario_solicitud.id_acudiente_masculino=datos_acudiente_masculino.id_persona_masculina AND formulario_solicitud.id_documentacion=documentacion.id_documento AND datos_acudiente_masculino.id_documentacion_independiente=documentacion_independiente.id_documentacion_independiente";
     $consultaFormularios = $objFormulario->select($query);
-
+print_r($consultaFormularios);
       //aqui empieza el paginado       
         $pagina = (isset($_REQUEST['pagina']) ? $_REQUEST['pagina'] : 1);
         $url = crearUrl('formulario', 'listadoSolicitud', 'listar');
@@ -219,7 +222,8 @@ class formularioController {
         include_once('../view/Matricula/Formulario/Solicitud/detalle.html.php');
     }
 
-    function editar($parametros = false){
+
+    function editarSolicitud($parametros = false){
       $objFormulario = new matriculaModel();
 
           $sqlTipo = "SELECT * FROM pag_tipo_documento";
@@ -286,10 +290,6 @@ class formularioController {
 
         include_once('../view/Matricula/Formulario/Renovacion/edicion.html.php');
     }
-
-
-
-
 
 
   function buscarAjaxSolicitud(){

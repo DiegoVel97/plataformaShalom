@@ -417,11 +417,10 @@ $(document).ready(function(){
             url: url,
             success: function (response) {
 
-
                 var respuesta = $.parseJSON(response);
 
                 if (respuesta.accion === true) {
-                    
+                        
                     Materialize.toast(respuesta.mensajes, 2500, 'rounded col green');
                     setTimeout(window.location.reload(), 3000);
 
