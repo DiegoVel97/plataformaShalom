@@ -2254,6 +2254,26 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
                 
             }
 
+
+
+            $cedulaPadre150File = $_FILES['cedulaPadre150File']['name'];
+            $TMP_NAME_cedulaPadre150File = $_FILES['cedulaPadre150File']['tmp_name'];
+            $ruta_cedulaPadre150File = $carpeta."/cedula_padre_150-".$cedulaPadre150File;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_cedulaPadre150File, $ruta_cedulaPadre150File)) {
+                }
+            } else {
+                
+            }
+
+
+
+
+
+
+
+
         }
 
         $objMatricula->cerrar();
