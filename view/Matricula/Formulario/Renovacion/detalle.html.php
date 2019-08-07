@@ -12,32 +12,32 @@
 		<br>
 		
 		<div class="informacion s12 m12 l12 xl12">
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>Foto del alumno</b>
 
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>Tipo de documento: </b> 
 					<?php echo $alumno['id_descripcion_documento']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>N&uacute;mero de documento:</b> 
 					<?php echo $alumno['id_alumno']; ?> 
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>Ciudad de expedici&oacute;n documento: </b>
 					<?php echo $alumno['ciudad_expedicion_documento']; ?>
 				</p>
 			</div>
 
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Nombre
@@ -46,7 +46,7 @@
 					<?php echo $alumno['primer_nombre']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Segundo nombre
@@ -55,7 +55,7 @@
 					<?php echo $alumno['segundo_nombre']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Apellido
@@ -64,7 +64,7 @@
 					<?php echo $alumno['primer_apellido']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Segundo apellido
@@ -73,7 +73,7 @@
 					<?php echo $alumno['segundo_apellido']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Fecha de nacimiento <br>
@@ -82,16 +82,16 @@
 					<?php echo $alumno['fecha_nacimiento']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Grado que ingreso
 					</b>
 					<br>
-					<?php echo $alumno['grado_que_ingreso']; ?>
+					<?php echo $alumno['descripcion_grado_Colegio']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Ciudad de residencia
@@ -100,7 +100,7 @@
 					<?php echo $alumno['ciudad_residencia']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Comuna o Localidad
@@ -109,7 +109,7 @@
 					<?php echo $alumno['comuna_localidad']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Direccion residencia
@@ -118,7 +118,7 @@
 					<?php echo $alumno['direccion_residencia']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Barrio actual
@@ -127,7 +127,7 @@
 					<?php echo $alumno['barrio_actual']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Telefono residencia
@@ -135,7 +135,7 @@
 					<?php echo $alumno['telefono_residencia_actual']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Nro hermanos
@@ -144,7 +144,7 @@
 					<?php echo $alumno['nro_hermanos']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Estudiante permanece en la tarde
@@ -153,17 +153,17 @@
 					<?php echo $alumno['estudiante_permanece_en_la_tarde']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						¿Presenta discapacidad?
 					</b>
 					<br>
-					<?php echo $alumno['presenta_discapacidad']; ?>
+					<?php echo $alumno['descripcion_discapacidad_medica']; ?>
 					
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						¿Pertenece a grupos etnicos?
@@ -171,52 +171,52 @@
 					<?php echo $alumno['descripcion_grupos_etnicos']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
-						Ha recibido terapida de...
+						Ha recibido terapia de...
 					</b>
 					<br>
-					<?php echo $alumno['ha_recibido_terapia_de']; ?>
+					<?php echo $alumno['descripcion_terapia']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						¿Condici&oacute;n M&eacute;dica?
 					</b>
 					<br>
-					<?php echo $alumno['condicion_medica']; ?>
+					<?php echo $alumno['descripcion_opciones']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						¿Condici&oacute;n M&eacute;dica relevante?
 					</b>
 					<br>
-					<?php echo $alumno['condicion_medica_relevante']; ?>
+					<?php echo $alumno['descripcion_opciones']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						¿Condici&oacute;n M&eacute;dica de cuidado?
 					</b>
 					<br>
-					<?php echo $alumno['condicion_medica_cuidado']; ?>
+					<?php echo $alumno['descripcion_opciones']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						¿Actualmente en terapia?
 					</b>
 					<br>
-					<?php echo $alumno['actualmente_terapia']; ?>
+					<?php echo $alumno['descripcion_opciones']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						¿Cual terapia?
@@ -225,34 +225,34 @@
 					<?php echo $alumno['cual_terapia']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Tipo de sangre
 					</b>
 					<br>
-					<?php echo $alumno['tipo_sangre']; ?>
+					<?php echo $alumno['descripcion_sangre']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						RH
 					</b>
 					<br>
-					<?php echo $alumno['rh_sangre']; ?>
+					<?php echo $alumno['descripcion_rh_sangre']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						EPS
 					</b>
 					<br>
-					<?php echo $alumno['eps']; ?>
+					<?php echo $alumno['descripcion_eps']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>	
 						¿Cual EPS?
@@ -261,16 +261,16 @@
 					<?php echo $alumno['cual_eps']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Tipo de escritura
 					</b>
 					<br>
-					<?php echo $alumno['tipo_escritura']; ?>
+					<?php echo $alumno['descripcion_tipo_escritura']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Año lectivo
@@ -279,7 +279,7 @@
 					<?php echo $alumno['ano_lectivo']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Estado en el Sistema
@@ -304,34 +304,44 @@
 				</center>
 			</div>
 			<br>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
+				<p>
+					<b>
+						Tipo de documento
+					</b>
+					<br>
+					<?php echo $alumno['id_descripcion_documento']; ?>
+				</p>
+			</div>
+
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Identificaci&oacute;n
 					</b>
 					<br>
-					<?php echo $alumno[36]; ?>
+					<?php echo $alumno['id_persona_masculina']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Nombre y apellido
 					</b>
 					<br>
-					<?php echo $alumno[38]; ?>
+					<?php echo $alumno['nombres_apellidos']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Estado civil
 					</b>
 					<br>
-					<?php echo $alumno[39]; ?>
+					<?php echo $alumno['descripcion_estado_civil']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Direccion residencia
@@ -340,85 +350,85 @@
 					<?php echo $alumno[40]; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Estrato social
 					</b>
 					<br>
-					<?php echo $alumno[41]; ?>
+					<?php echo $alumno['estratoSocialMasculino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Telefono residencia
 					</b>
 					<br>
-					<?php echo $alumno[42]; ?>
+					<?php echo $alumno['telefonoMasculino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Telefono Oficina
 					</b>
 					<br>
-					<?php echo $alumno[43]; ?>
+					<?php echo $alumno['telefonoOficinaMasculino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Celular
 					</b>
 					<br>
-					<?php echo $alumno[44]; ?>
+					<?php echo $alumno['celularMasculino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Correo
 					</b>
 					<br>
-					<?php echo $alumno[45]; ?>
+					<?php echo $alumno['correoMasculino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Empresa donde labora
 					</b>
 					<br>
-					<?php echo $alumno[46]; ?>
+					<?php echo $alumno['empresaMasculino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Profesion
 					</b>
 					<br>
-					<?php echo $alumno[47]; ?>
+					<?php echo $alumno['profesionMasculino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Ocupacion actual
 					</b>
 					<br>
-					<?php echo $alumno[48]; ?>
+					<?php echo $alumno['ocupacionMasculino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Estado en el sistema
 					</b>
 					<br>
-					<?php echo $alumno[50]; ?>
+					<?php echo $alumno['estadoMasculino']; ?>
 				</p>
 			</div>
 
@@ -438,121 +448,121 @@
 				</center>
 			</div>
 			<br>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Identificaci&oacute;n
 					</b>
 					<br>
-					<?php echo $alumno[36]; ?>
+					<?php echo $alumno['id_persona_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Nombre y apellido
 					</b>
 					<br>
-					<?php echo $alumno[38]; ?>
+					<?php echo $alumno['nombres_apellidos_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Estado civil
 					</b>
 					<br>
-					<?php echo $alumno[39]; ?>
+					<?php echo $alumno['estado_civil_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Direccion residencia
 					</b>
 					<br>
-					<?php echo $alumno[40]; ?>
+					<?php echo $alumno['direccion_residencia_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Estrato social
 					</b>
 					<br>
-					<?php echo $alumno[41]; ?>
+					<?php echo $alumno['estrato_social_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Telefono residencia
 					</b>
 					<br>
-					<?php echo $alumno[42]; ?>
+					<?php echo $alumno['telefono_residencia_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Telefono Oficina
 					</b>
 					<br>
-					<?php echo $alumno[43]; ?>
+					<?php echo $alumno['telefono_oficina_actual_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Celular
 					</b>
 					<br>
-					<?php echo $alumno[44]; ?>
+					<?php echo $alumno['numero_celular_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Correo
 					</b>
 					<br>
-					<?php echo $alumno[45]; ?>
+					<?php echo $alumno['correo_persona_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Empresa donde labora
 					</b>
 					<br>
-					<?php echo $alumno[46]; ?>
+					<?php echo $alumno['empresa_donde_trabaja_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Profesion
 					</b>
 					<br>
-					<?php echo $alumno[47]; ?>
+					<?php echo $alumno['profesion_persona_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Ocupacion actual
 					</b>
 					<br>
-					<?php echo $alumno[48]; ?>
+					<?php echo $alumno['ocupacion_actual_femenino']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Estado en el sistema
 					</b>
 					<br>
-					<?php echo $alumno[50]; ?>
+					<?php echo $alumno['estado_femenino']; ?>
 				</p>
 			</div>
 
@@ -569,7 +579,7 @@
 				</center>
 			</div>
 			<br>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Identificaci&oacute;n
@@ -578,7 +588,7 @@
 					<?php echo $alumno['id_persona']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Nombre y apellido
@@ -587,7 +597,7 @@
 					<?php echo $alumno['nombres_apellidos']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Estado civil
@@ -596,7 +606,7 @@
 					<?php echo $alumno['estado_civil']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Direccion residencia
@@ -605,7 +615,7 @@
 					<?php echo $alumno['direccion_residencia']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Estrato social
@@ -614,7 +624,7 @@
 					<?php echo $alumno['estrato_social']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Telefono residencia
@@ -623,7 +633,7 @@
 					<?php echo $alumno['telefono_residencia']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Telefono Oficina
@@ -632,7 +642,7 @@
 					<?php echo $alumno['telefono_oficina_actual']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Celular
@@ -641,7 +651,7 @@
 					<?php echo $alumno['numero_celular']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Correo
@@ -650,7 +660,7 @@
 					<?php echo $alumno['correo_persona']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Empresa donde labora
@@ -659,7 +669,7 @@
 					<?php echo $alumno['empresa_donde_trabaja']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Profesion
@@ -668,7 +678,7 @@
 					<?php echo $alumno['profesion_persona']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Ocupacion actual
@@ -677,7 +687,7 @@
 					<?php echo $alumno['ocupacion_actual']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						Estado en el sistema
@@ -686,7 +696,7 @@
 					<?php echo $alumno['estado']; ?>
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						
@@ -695,7 +705,7 @@
 					
 				</p>
 			</div>
-			<div class="col s12 m3 l3 xl3">
+			<div class="col s12 m4 l4 xl4">
 				<p>
 					<b>
 						
@@ -719,12 +729,13 @@
             $extension_rc = explode(".", $alumno['registro_civil']);
             if($extension_rc[1] == "jpeg" OR $extension_rc[1] == "jpg" OR $extension_rc[1] == "png"){
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/registro_civil-".$alumno['registro_civil'];
+            	
             	?>
-				<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - REGISTRO CIVIL</button>
+				<button type="button" class="btn waves-effect col s12 m12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - REGISTRO CIVIL</button>
            <?php }else if($extension_rc[1] == "pdf"){ ?>
            	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/registro_civil-".$alumno['registro_civil']; ?>
             	<a href="<?php echo $url; ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARNET VACUNACION</button>
+            		<button type="button" class="btn waves-effect col s12 m12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARNET VACUNACION</button>
             	</a>
             <?php }else{
 
@@ -735,12 +746,12 @@
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/tarjeta_identidad-".$alumno['registro_civil'];
             	?>
 
-				<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - TARJETA IDENTIDAD</button>
+				<button type="button" class="btn waves-effect col s12 m12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - TARJETA IDENTIDAD</button>
 
           <?php }else if($extension_ti[1] == "pdf"){ ?>
             	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/tarjeta_identidad-".$alumno['tarjeta_identidad']; ?>
             	<a href="<?php echo $url; ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - TARJETA IDENTIDAD</button>
+            		<button type="button" class="btn waves-effect col s12 m12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - TARJETA IDENTIDAD</button>
             	</a>
             <?php }else{
 
@@ -751,11 +762,11 @@
             if($extension_cv[1] == "jpeg" OR $extension_cv[1] == "jpg" OR $extension_cv[1] == "png"){
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carnet_vacunacion-".$alumno['carnet_vacunacion'];
             	?>
-				<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CARNET VACUNACION</button>
+				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CARNET VACUNACION</button>
             <?php }else if($extension_cv[1] == "pdf"){ ?>
             	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carnet_vacunacion-".$alumno['carnet_vacunacion']; ?>
             	<a href="<?php echo $url; ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARNET VACUNACION</button>
+            		<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARNET VACUNACION</button>
             	</a>
             <?php }else{
 
@@ -766,12 +777,12 @@
             if($extension_eps[1] == "jpeg" OR $extension_eps[1] == "jpg" OR $extension_eps[1] == "png"){
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carnet_eps-".$alumno['carnet_eps'];
             	?>
-				<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CARNET EPS</button>
+				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CARNET EPS</button>
              <?php }else if($extension_eps[1] == "pdf"){ ?>
             	
              	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carnet_eps-".$alumno['carnet_eps']; ?>
             	<a href="<?php echo $url; ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARNET EPS</button>
+            		<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARNET EPS</button>
             	</a>
             <?php }else{
 
@@ -781,7 +792,7 @@
   if($alumno['certificado_medico'] == "No registra"){
 ?>
 
-          	<div class="col s5">
+          	<div class="col s12 m12 l12">
           		<code>NO POSEE CERTIFICADO MEDICO</code>
           	</div>
 <?php
@@ -791,12 +802,12 @@
             if($extension_cm[1] == "jpeg" OR $extension_cm[1] == "jpg" OR $extension_cm[1] == "png"){
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_medico-".$alumno['certificado_medico']; ;
             	?>
-				<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CERTIFICADO MEDICO</button>
+				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CERTIFICADO MEDICO</button>
             <?php }else if($extension_cm[1] == "pdf"){ ?>
             	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_medico-".$alumno['certificado_medico']; ?>
 
             	<a href="<?PHP echo($url) ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CERTIFICADO MEDICO</button>
+            		<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CERTIFICADO MEDICO</button>
             	</a>
             <?php }else{
 
@@ -806,17 +817,22 @@
 
             $extension_cvi = explode(".", $alumno['certificado_visual']);
             if($extension_cvi[1] == "jpeg" OR $extension_cvi[1] == "jpg" OR $extension_cvi[1] == "png"){
+
             	$url =  "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_visual-".$alumno['certificado_visual'];
             	?>
-				<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CERTIFICADO VISUAL</button>
-            <<?php }else if($extension_cvi[1] == "pdf"){ ?>
-            	<?php 
+
+				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CERTIFICADO VISUAL</button>
+
+            <?php }else if($extension_cvi[1] == "pdf"){ 
+
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_visual-".$alumno['certificado_visual'];
+            	
             	?>
 
             	<a href="<?php echo $url; ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CERTIFICADO VISUAL</button>
+            		<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CERTIFICADO VISUAL</button>
             	</a>
+
             <?php }else{
 
             }
@@ -824,16 +840,22 @@
 
 
             $extension_caudi = explode(".", $alumno['certificado_auditivo']);
-            if($extension_caudi[1] == "jpeg" OR $extension_caudi[1] == "jpg" OR $extension_caudi[1] == "png"){
+            $extension_final_auditivo = end($extension_caudi);
+            if($extension_final_auditivo == "jpeg" OR $extension_final_auditivo == "jpg" OR $extension_final_auditivo == "png"){
 
             	$url =  "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_auditivo-".$alumno['certificado_auditivo'];
             	?>
-				<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CERTIFICADO AUDITIVO</button>
-            <?php }else if($extension_caudi[1] == "pdf"){ ?>
-            	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_auditivo-".$alumno['certificado_auditivo']; ?>
+				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CERTIFICADO AUDITIVO</button>
+
+            <?php }else if($extension_final_auditivo == "pdf"){ ?>
+
+            	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_auditivo-".$alumno['certificado_auditivo']; 
+            	?>
+
             	<a href="<?php echo $url; ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CERTIFICADO AUDITIVO</button>
+            		<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CERTIFICADO AUDITIVO</button>
             	</a>
+
             <?php }else{
 
             }
@@ -842,16 +864,17 @@
 
 
             $extension_ccm = explode(".", $alumno['cedula_madre']);
-            if($extension_ccm[1] == "jpeg" OR $extension_ccm[1] == "jpg" OR $extension_ccm[1] == "png"){
+            $extension_final_ccm = end($extension_ccm);
+            if($extension_final_ccm == "jpeg" OR $extension_final_ccm == "jpg" OR $extension_final_ccm == "png"){
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/cedula_madre-".$alumno['cedula_madre'];
 
             	?>
-				<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CEDULA MAM&Aacute;</button>
-           <?php }else if($extension_ccm[1] == "pdf"){ 
+				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CEDULA MAM&Aacute;</button>
+           <?php }else if($extension_final_ccm == "pdf"){ 
            	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/cedula_madre-".$alumno['cedula_madre'];
            	?>
             	<a href="<?php echo $url; ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARNET VACUNACION</button>
+            		<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARNET VACUNACION</button>
             	</a>
             <?php }else{
 
@@ -859,18 +882,20 @@
 
 
             $extension_ccp = explode(".", $alumno['cedula_padre']);
-            if($extension_ccp[1] == "jpeg" OR $extension_ccp[1] == "jpg" OR $extension_ccp[1] == "png"){
+            $final_extension_ccp = end($extension_ccp);
+
+            if($final_extension_ccp == "jpeg" OR $final_extension_ccp == "jpg" OR $final_extension_ccp == "png"){
             	$url =  "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/cedula_padre-".$alumno['cedula_padre'];
 
             	?>
-				<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CEDULA PAP&Aacute;</button>
-          <?php }else if($extension_ccp[1] == "pdf"){ 
+				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CEDULA PAP&Aacute;</button>
+          <?php }else if($final_extension_ccp == "pdf"){ 
 
             	$url  = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/cedula_padre-".$alumno['cedula_padre'];
             	
             	?>
             	<a href="<?php echo $url; ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CEDULA PAPA</button>
+            		<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CEDULA PAPA</button>
             	</a>
             <?php }else{
 
@@ -880,26 +905,26 @@
           if($alumno['carta_laboral_madre'] == "No registra"){
 ?>
 
-          	<div class="col s5">
+          	<div class="col s12 m12 l12">
           		<code>NO POSEE CARTA LABORAL MADRE</code>
           	</div>
 <?php
 	          }else{
 
 	          	$extension_clbm = explode(".", $alumno['carta_laboral_madre']);
-          
-             if($extension_clbm[1] == "jpeg" OR $extension_clbm[1] == "jpg" OR $extension_clbm[1] == "png"){
+          	$final_extension_clbm = end($extension_clbm);
+             if($final_extension_clbm == "jpeg" OR $final_extension_clbm == "jpg" OR $final_extension_clbm == "png"){
 
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carta_laboral_madre-".$alumno['carta_laboral_madre'];
 
             	?>
 
-				<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CARTA LABORAL MAM&Aacute;</button>
-            <?php }else if($extension_clbm[1] == "pdf"){ 
+				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CARTA LABORAL MAM&Aacute;</button>
+            <?php }else if($final_extension_clbm == "pdf"){ 
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carta_laboral_madre-".$alumno['carta_laboral_madre'];
             	?>
             	<a href="<?php echo $url; ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARTA LABORAL MADRE</button>
+            		<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARTA LABORAL MADRE</button>
             	</a>
             <?php }else{
 
@@ -912,7 +937,7 @@
           if($alumno['carta_laboral_padre'] == "No registra"){
 ?>
 
-          	<div class="col s5">
+          	<div class="col s12 m12 l12">
           		<code>NO POSEE CARTA LABORAL PADRE</code>
           	</div>
 <?php
@@ -920,17 +945,18 @@
 
 
             $extension_clbp = explode(".", $alumno['carta_laboral_padre']);
-            if($extension_clbp[1] == "jpeg" OR $extension_clbp[1] == "jpg" OR $extension_clbp[1] == "png"){
-            	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carta_laboral_padre-".$alumno['carta_laboral_padre'];
+            $final_extension_clbp = end($extension_clbp);
+            if($final_extension_clbp == "jpeg" OR $final_extension_clbp == "jpg" OR $final_extension_clbp == "png"){
+            	 $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carta_laboral_padre-".$alumno['carta_laboral_padre'];
 
             	?>
-				<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CARTA LABORAL PAP&Aacute;</button>
-            <?php }else if($extension_clbp[1] == "pdf"){ 
+				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CARTA LABORAL PAP&Aacute;</button>
+            <?php }else if($final_extension_clbp == "pdf"){ 
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/carta_laboral_padre-".$alumno['carta_laboral_padre'];
 
             	?>
             	<a href="<?php echo $url; ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARTA LABORAL PADRE</button>
+            		<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CARTA LABORAL PADRE</button>
             	</a>
             <?php }else{
 
@@ -938,16 +964,17 @@
 
 }
              $extension_rcpu = explode(".", $alumno['recibo_publico']);
-            if($extension_rcpu[1] == "jpeg" OR $extension_rcpu[1] == "jpg" OR $extension_rcpu[1] == "png"){
+             $final_extension_rcpu = end($extension_rcpu);
+            if($final_extension_rcpu == "jpeg" OR $final_extension_rcpu == "jpg" OR $final_extension_rcpu == "png"){
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/servicios_publicos-".$alumno['recibo_publico'];
 
             	?>
-				<button type="button" class="btn waves-effect col s1O m10 l10 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - RECIBO P&Uacute;BLICO</button>
-            <?php }else if($extension_rcpu[1] == "pdf"){ 
+				<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - RECIBO P&Uacute;BLICO</button>
+            <?php }else if($final_extension_rcpu == "pdf"){ 
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/servicios_publicos-".$alumno['recibo_publico'];
             	?>
             	<a href="<?php echo $url; ?>" target="_blank">
-            		<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - RECIBO PUBLICO</button>
+            		<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - RECIBO PUBLICO</button>
             	</a>
             <?php }else{
 
@@ -978,14 +1005,14 @@
             	$url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/declaracion_renta-".$documento['declaracion_renta'];
             	 ?>
 
-            	<button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - DECLARACION RENTA</button>
+            	<button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - DECLARACION RENTA</button>
 
             <?php }else{ ?>
 
             	<?php $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/declaracion_renta-".$documento['declaracion_renta'];
             	?>
                   <a href="<?php echo $url; ?>" target="_blank">
-                        <button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - DECLARACION RENTA</button>
+                        <button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - DECLARACION RENTA</button>
                   </a>
             <?php }
 
@@ -997,14 +1024,14 @@
 
                 $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_ingreso_avalado_contador-".$documento['certificado_avalado_contador'];
                   ?>
-                        <button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CERTIFICADO AVALADO</button>
+                        <button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - CERTIFICADO AVALADO</button>
 
            <?php }else if($extensionFinal_cavc == "pdf"){ 
 
                 $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/certificado_ingreso_avalado_contador-".$documento['certificado_avalado_contador'];
                 ?>
                   <a href="<?php echo $url; ?>" target="_blank">
-                        <button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CERTIFICADO AVALADO</button>
+                        <button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CERTIFICADO AVALADO</button>
                   </a>
 
             <?php }else{
@@ -1020,14 +1047,14 @@
 
                 $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/antecedentes_disciplinarios-".$documento['antecedentes_disciplinarios'];
                   ?>
-                        <button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - ANTECEDENTES DISCIPLINARIOS</button>
+                        <button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - ANTECEDENTES DISCIPLINARIOS</button>
 
            <?php }else if($extensionFinal_acdis == "pdf"){ 
 
                 $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/antecedentes_disciplinarios-".$documento['antecedentes_disciplinarios'];
                 ?>
                   <a href="<?php echo $url; ?>" target="_blank">
-                        <button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CANTECEDENTES DISCIPLINARIOS</button>
+                        <button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CANTECEDENTES DISCIPLINARIOS</button>
                   </a>
                   
             <?php }else{
@@ -1042,14 +1069,14 @@
 
                 $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/tarjeta_profesional-".$documento['tarjeta_profesional_contador'];
                   ?>
-                        <button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - ANTECEDENTES DISCIPLINARIOS</button>
+                        <button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>" id="verImgRC">VER IMAGEN - ANTECEDENTES DISCIPLINARIOS</button>
 
            <?php }else if($extensionFinal_tarjeta_conta == "pdf"){ 
 
                 $url = "http://".$_SERVER['SERVER_NAME'].addLib('documentos/alumnos')."/".$alumno['id_alumno']."/tarjeta_profesional-".$documento['tarjeta_profesional_contador'];
                 ?>
                   <a href="<?php echo $url; ?>" target="_blank">
-                        <button type="button" class="btn waves-effect col s5 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CANTECEDENTES DISCIPLINARIOS</button>
+                        <button type="button" class="btn waves-effect col s12 m12 l12 teal" style="margin:5px 5px;" value="<?php echo $url; ?>">VER PDF - CANTECEDENTES DISCIPLINARIOS</button>
                   </a>
                   
             <?php }else{

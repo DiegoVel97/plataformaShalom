@@ -55,13 +55,11 @@
 
 </head>
 
-<div class="containerBigImg" id="containerImage" style="text-align:center; align-content: center; position: absolute; height:100%; width: 100%; z-index: 90000; background-color: rgba(0,0,0,0.5); display: none;">
-  
-
-    <img src="" id="imagenExpandida" src="" width="500" height="500" style="-webkit-box-shadow: 2px 3px 70px 2px rgba(255,255,255,1);
--moz-box-shadow: 2px 3px 70px 2px rgba(255,255,255,1);
-box-shadow: 2px 3px 70px 2px rgba(255,255,255,1); margin-top: 5%;">
-<br><br>
+<div class="containerBigImg" id="containerImage" style="text-align:center; align-content: center; position: absolute; height:125%; width: 100%;  padding-top:15%; z-index: 90000; background-color: rgba(0,0,0,0.5); display: none;">
+      <img src="" id="imagenExpandida" src="" width="500" height="auto" style="-webkit-box-shadow: 2px 3px 70px 2px rgba(255,255,255,1);
+  -moz-box-shadow: 2px 3px 70px 2px rgba(255,255,255,1);
+  box-shadow: 2px 3px 70px 2px rgba(255,255,255,1); ">
+  <br><br>
   <button class="btn teal" id="closeVistaPrevia">CERRAR VISTA PREVIA</button>
 </div>
 

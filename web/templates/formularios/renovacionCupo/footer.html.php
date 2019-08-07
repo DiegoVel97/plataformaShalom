@@ -24,7 +24,16 @@
     <?php if($_GET['ini']=="false"){ ?>
       Materialize.toast('Error de Informacion', 2000,'rounded col red');
     <?php } ?>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, options);
+  });
 
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
   </script>
 
 </body>
