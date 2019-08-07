@@ -863,7 +863,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>C&eacute;dula padre 150%</span>
 						<input type="file" name="cedula_padre_alumno">
@@ -872,16 +872,16 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
-						<span>Fotocopia tipo documento padre</span>
+						<span>Foto tipo documento padre</span>
 						<input type="file" name="cedulaPadre150File">
 					</div>
 					<div class="file-path-wrapper">
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>C&eacute;dula madre 150%</span>
 						<input type="file" name="cedula_madre_alumno">
@@ -890,16 +890,16 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
-						<span>Fotocopia tipo documento madre</span>
+						<span>Foto tipo documento madre</span>
 						<input type="file" name="cedulaPadre150File">
 					</div>
 					<div class="file-path-wrapper">
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Carta laboral Padre</span>
 						<input type="file" name="carta_laboral_padre_alumno">
@@ -908,7 +908,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Carta laboral Madre</span>
 						<input type="file" name="carta_laboral_madre_alumno">
@@ -1033,7 +1033,7 @@
 
 				</div>
 				<div class="inputsIndependiente col s12 m12 l12 xl12" style="display: none;">
-					<div class="file-field input-field col s12 m4 l4 xl4">
+					<div class="file-field input-field col s12 m12 l12 xl12">
 						<div class="btn">
 							<span>Declaraci&oacute;n de renta</span>
 							<input type="file" name="declaracion_renta">
@@ -1051,7 +1051,7 @@
 							<input class="file-path validate" type="text">
 						</div>
 					</div>
-					<div class="file-field input-field col s12 m4 l4 xl4">
+					<div class="file-field input-field col s12 m12 l12 xl12">
 						<div class="btn">
 							<span>Tarjeta profesional contador</span>
 							<input type="file" name="tarjeta_profesional">

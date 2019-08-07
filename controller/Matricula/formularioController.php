@@ -57,7 +57,7 @@ class formularioController {
         include_once('../view/Matricula/Formulario/Renovacion/detalle.html.php');
     }
 
-    function editar($parametros = false){
+    function editarSolicitud($parametros = false){
       $objFormulario = new matriculaModel();
 
           $sqlTipo = "SELECT * FROM pag_tipo_documento";
@@ -171,7 +171,7 @@ class formularioController {
     include_once('../view/Matricula/Formulario/Solicitud/consulta.html.php');
     }
 
-    function verDetalle($parametros = false){
+    function verDetalleSolicitud($parametros = false){
           $objFormulario = new matriculaModel();
 
           $sqlDtoIndependiente = "SELECT * FROM documentacion_independiente";
@@ -253,7 +253,7 @@ class formularioController {
     }
 
 
-  function buscarAjax(){
+  function buscarAjaxSolicitud(){
     $objMatriculas = new matriculaModel();
 
         $buscarAlumno = $_POST['buscarAlumno'];
@@ -280,7 +280,7 @@ class formularioController {
         include_once('../view/Matricula/Formulario/Renovacion/listar.html.php');
   }
 
-  function verPDF($parametros = false){
+  function verPDFSolicitud($parametros = false){
     echo $parametros[1];
 
       $file = '../web/documentos/alumnos/'.$parametros[1].'/'.$parametros[2];

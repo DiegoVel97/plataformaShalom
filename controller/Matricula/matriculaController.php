@@ -2102,6 +2102,157 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
             $insercion_formulario = $objMatricula->insertar($sql_insercion_formulario);
 
 
+             $carpeta = getDocumentRoot() . "/web/documentos/alumnos/" .$numero_documento_alumno."/renovacion";
+            
+            if (!file_exists($carpeta)) {
+                mkdir($carpeta, 0777, true);
+            }
+
+
+
+            
+            $foto_alumnoFile = $_FILES['foto_alumno']['name'];
+            $TMP_NAME_fotoAlumnoFile = $_FILES['foto_alumno']['tmp_name'];
+            $ruta_FotoFile = $carpeta."/foto_alumno-".$foto_alumnoFile;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_fotoAlumnoFile, $ruta_FotoFile)) {
+                }
+            } else {
+                
+            }
+
+
+            $registro_civil_file = $_FILES['registro_civil_alumno']['name'];
+            $TMP_NAME_registro_civil_file = $_FILES['registro_civil_alumno']['tmp_name'];
+            $ruta_registro_civil = $carpeta."/registro_civil-".$registro_civil_file;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_registro_civil_file, $ruta_registro_civil)) {
+                }
+            } else {
+                
+            }
+
+
+            $tarjeta_de_identidad_alumno_file = $_FILES['tarjeta_de_identidad_alumno']['name'];
+            $TMP_NAME_tarjeta_de_identidad_alumno = $_FILES['tarjeta_de_identidad_alumno']['tmp_name'];
+            $ruta_tarjeta_de_identidad_alumno = $carpeta."/tarjeta_identidad-".$tarjeta_de_identidad_alumno_file;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_tarjeta_de_identidad_alumno, $ruta_tarjeta_de_identidad_alumno)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $informe_academico_file = $_FILES['fotocopia_informe_academico_alumno']['name'];
+            $TMP_NAME_informe_academico = $_FILES['fotocopia_informe_academico_alumno']['tmp_name'];
+            $ruta_informe_academico = $carpeta."/tarjeta_identidad-".$informe_academico_file;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_informe_academico, $ruta_informe_academico)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $recibo_publico_file = $_FILES['recibo_publico_alumno']['name'];
+            $TMP_NAME_recibo_publico = $_FILES['recibo_publico_alumno']['tmp_name'];
+            $ruta_recibo_publico = $carpeta."/recibo_publico-".$informe_academico_file;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_recibo_publico, $ruta_recibo_publico)) {
+                }
+            } else {
+                
+            }
+
+
+
+
+            $certificado_original_file = $_FILES['certificado_original_grado_alumno']['name'];
+            $TMP_NAME_certificado_original = $_FILES['certificado_original_grado_alumno']['tmp_name'];
+            $ruta_certificado_original = $carpeta."/certificado_original-".$certificado_original_file;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_certificado_original, $ruta_certificado_original)) {
+                }
+            } else {
+                
+            }
+
+
+
+
+            $certificado_original_file = $_FILES['fotocopia_convivencia_alumno']['name'];
+            $TMP_NAME_certificado_original = $_FILES['fotocopia_convivencia_alumno']['tmp_name'];
+            $ruta_certificado_original = $carpeta."/fotocopia_convivencia-".$certificado_original_file;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_certificado_original, $ruta_certificado_original)) {
+                }
+            } else {
+                
+            }
+
+
+
+
+            $fotocopia_paz_y_salvo = $_FILES['fotocopia_paz_y_salvo_alumno']['name'];
+            $TMP_NAME_fotocopia_paz_y_salvo = $_FILES['fotocopia_paz_y_salvo_alumno']['tmp_name'];
+            $ruta_fotocopia_paz_y_salvo = $carpeta."/fotocopia_paz_y_salvo-".$fotocopia_paz_y_salvo;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_fotocopia_paz_y_salvo, $ruta_fotocopia_paz_y_salvo)) {
+                }
+            } else {
+                
+            }
+
+
+
+
+            $carnet_vacunacion_alumno = $_FILES['carnet_vacunacion_alumno']['name'];
+            $TMP_NAME_carnet_vacunacion_alumno = $_FILES['carnet_vacunacion_alumno']['tmp_name'];
+            $ruta_carnet_vacunacion_alumno = $carpeta."/carnet_vacunacion-".$carnet_vacunacion_alumno;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_carnet_vacunacion_alumno, $ruta_carnet_vacunacion_alumno)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $fotocopia_carnet_eps_alumno = $_FILES['fotocopia_carnet_eps_alumno']['name'];
+            $TMP_NAME_fotocopia_carnet_eps_alumno = $_FILES['fotocopia_carnet_eps_alumno']['tmp_name'];
+            $ruta_fotocopia_carnet_eps_alumno = $carpeta."/fotocopia_carnet_eps-".$fotocopia_carnet_eps_alumno;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_fotocopia_carnet_eps_alumno, $ruta_fotocopia_carnet_eps_alumno)) {
+                }
+            } else {
+                
+            }
+
+
+
+            $cedula_padre_alumno = $_FILES['cedula_padre_alumno']['name'];
+            $TMP_NAME_cedula_padre_alumno = $_FILES['cedula_padre_alumno']['tmp_name'];
+            $ruta_cedula_padre_alumno = $carpeta."/fotocopia_carnet_eps-".$cedula_padre_alumno;
+
+            if ($carpeta <> "") {
+                if (move_uploaded_file($TMP_NAME_cedula_padre_alumno, $ruta_cedula_padre_alumno)) {
+                }
+            } else {
+                
+            }
 
         }
 
