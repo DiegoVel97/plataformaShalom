@@ -101,7 +101,7 @@
 
 						<div class="input-field col s12 m4 l4 xl4">
 							<input  type="date" name="fecha_de_nacimiento_alumno"><br>
-							<label for="">Fecha de nacimiento</label>
+							<label for="" class="active">Fecha de nacimiento</label>
 						</div>
 
 						<div class="input-field col s12 m4 l4 xl4">

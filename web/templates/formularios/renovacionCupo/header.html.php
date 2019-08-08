@@ -44,6 +44,9 @@
   <!--css personalizados-->
   <link href="<?php echo addLib('css/select2.css')?>" type="text/css" rel="stylesheet">
   <link href="<?php echo addLib('css/global.css') ?>" type="text/css" rel="stylesheet" media="screen,projection">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"></script>
+
+
 </head>
 
 <body class="verde_oscuro">

@@ -130,7 +130,7 @@
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input id="" type="date" name="fecha_nacimiento"><br>
-							<label for="">Fecha de nacimiento</label>
+							<label for="" class="active">Fecha de nacimiento</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="tipoDocumentoAlumno" id="tipoDocumentoAlumno" value="">
@@ -158,7 +158,7 @@
 							<input id="" type="email" class="validate" name="confirmarCorreoAlumno">
 							<label for="">Confirmar correo</label>
 						</div>
-						<div class="input-field col s12 m4 l4 xl4">
+						<div class="input-field col s12 m8 l8 xl8">
 							<input type="hidden" name="gradoAlumno" id="gradoAlumno" value="">
 							<select id="gradoAlumnoSelect">
 								<option value="" disabled selected>Grado en el que ingreso el alumno</option>
@@ -205,7 +205,7 @@
 							<input id="" type="text" class="validate" name="permaneceEstudianteTarde">
 							<label for="">Con quien permanece el estudiante en las tardes:</label>
 						</div>
-						<div class="input-field col s12 m4 l4 xl4">
+						<div class="input-field col s12 m8 l8 xl8">
 							<input type="hidden" name="discapacidadEstudiante" id="discapacidadEstudiante" value="">
 							<select id="discapacidadEstudianteSelect">
 								<option value="" disabled selected>Discapacidad</option>
@@ -277,7 +277,7 @@
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input id="" type="text" class="validate" name="cualTerapiaAlumno" id="cual">
-							<label for="">Cual</label>
+							<label for="">Otro, ¿Cual?</label>
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="tipoSangreAlumno" id="tipoSangreAlumno" value="">
@@ -299,6 +299,17 @@
 							</select>
 							<label>RH:</label>
 						</div>
+
+						<div class="input-field col s12 m4 l4 xl4">
+							<input type="hidden" name="tipoEscrituraAlumno" id="tipoEscrituraAlumno" value="">
+							<select id="tipoEscrituraAlumnoSelect">
+								<option value="" disabled selected>Seleccionar:</option>
+								<?php foreach(pag_tipo_escritura() as $tipoEscritura) { ?>
+						      	<option value="<?php echo $tipoEscritura['id_tipo_escritura']; ?>"><?php echo $tipoEscritura['descripcion_tipo_escritura']; ?></option>
+						      <?php } ?>
+							</select>
+							<label>Tipo de escritura:</label>
+						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input type="hidden" name="epsAlumno" id="epsAlumno">
 							<select id="epsAlumnoSelect">
@@ -311,17 +322,7 @@
 						</div>
 						<div class="input-field col s12 m4 l4 xl4">
 							<input id="" type="text" class="validate" name="cualEPSAlumno">
-							<label for="">¿Cual?</label>
-						</div>
-						<div class="input-field col s12 m4 l4 xl4">
-							<input type="hidden" name="tipoEscrituraAlumno" id="tipoEscrituraAlumno" value="">
-							<select id="tipoEscrituraAlumnoSelect">
-								<option value="" disabled selected>Seleccionar:</option>
-								<?php foreach(pag_tipo_escritura() as $tipoEscritura) { ?>
-						      	<option value="<?php echo $tipoEscritura['id_tipo_escritura']; ?>"><?php echo $tipoEscritura['descripcion_tipo_escritura']; ?></option>
-						      <?php } ?>
-							</select>
-							<label>Tipo de escritura:</label>
+							<label for="">Otro, ¿Cual?</label>
 						</div>
 					</div>
 				</div>
@@ -609,7 +610,7 @@
 						<b>ADJUNTAR DOCUMENTACI&Oacute;N ALUMNO</b>
 					</h1>
 				</center>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Registro Civil</span>
 						<input type="file" name="registroCivilFile">
@@ -618,7 +619,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Tarjeta de identidad</span>
 						<input type="file" name="tarjetaIdentidadFile">
@@ -627,7 +628,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Carnet de vacunaci&oacute;n</span>
 						<input type="file" name="carnetVacunacionFile">
@@ -637,7 +638,7 @@
 					</div>
 				</div>
 
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Carnet EPS</span>
 						<input type="file" name="carnetEPSFile">
@@ -646,7 +647,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Certificado medico</span>
 						<input type="file" name="certificadoMedicoFile">
@@ -655,7 +656,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Certificado visual</span>
 						<input type="file" name="certificadoVisualFile">
@@ -664,7 +665,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Certificado auditivo</span>
 						<input type="file" name="certificadoAuditivoFile">
@@ -690,7 +691,7 @@
 						<b>ADJUNTAR DOCUMENTACI&Oacute;N</b>
 					</h1>
 				</center>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m6 l6 xl6">
 					<div class="btn">
 						<span>C&eacute;dula padre 150%</span>
 						<input type="file" name="cedulaPadre150File">
@@ -699,7 +700,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m6 l6 xl6">
 					<div class="btn">
 						<span>C&eacute;dula madre 150%</span>
 						<input type="file" name="cedulaMadre150File">
@@ -708,7 +709,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m6 l6 xl6">
 					<div class="btn">
 						<span>Carta laboral Padre</span>
 						<input type="file" name="cartaLaboralPadreFile">
@@ -717,7 +718,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m6 l6 xl6">
 					<div class="btn">
 						<span>Carta laboral Madre</span>
 						<input type="file" name="cartaLaboralMadreFile">
@@ -726,7 +727,7 @@
 						<input class="file-path validate" type="text">
 					</div>
 				</div>
-				<div class="file-field input-field col s12 m4 l4 xl4">
+				<div class="file-field input-field col s12 m12 l12 xl12">
 					<div class="btn">
 						<span>Recibo p&uacute;blico (agua y luz)</span>
 						<input type="file" name="reciboPublicoFile">
@@ -762,7 +763,7 @@
 				</div>
 
 				<div class="inputsIndependiente col s12 m12 l12 xl12" style="display: none;">
-					<div class="file-field input-field col s12 m4 l4 xl4">
+					<div class="file-field input-field col s12 m12 l12 xl12">
 						<div class="btn">
 							<span>Declaraci&oacute;n de renta</span>
 							<input type="file" name="declaracionRentaFile">
@@ -771,7 +772,7 @@
 							<input class="file-path validate" type="text">
 						</div>
 					</div>
-					<div class="file-field input-field col s12 m8 l8 xl8">
+					<div class="file-field input-field col s12 m12 l12 xl12">
 						<div class="btn">
 							<span>Certificado de ingreso avalado por un contador</span>
 							<input type="file" name="certificadoIngresoAvaladoFile">
@@ -780,7 +781,7 @@
 							<input class="file-path validate" type="text">
 						</div>
 					</div>
-					<div class="file-field input-field col s12 m4 l4 xl4">
+					<div class="file-field input-field col s12 m12 l12 xl12">
 						<div class="btn">
 							<span>Tarjeta profesional contador</span>
 							<input type="file" name="tarjetaProfesionalContadorFile">

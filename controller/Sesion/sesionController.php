@@ -21,9 +21,8 @@ class SesionController {
 
             if ($arraySesion['sesion']['usu_estado'] == 'activo') {
 
-                $sql = "select *,pag_permisos.func_id from pag_usuario,pag_persona,pag_rol,pag_permisos,pag_funcion 
-                    where 
-                    pag_usuario.per_id=pag_persona.per_id
+                $sql = "select *,pag_permisos.func_id from pag_usuario,pag_persona,pag_rol,pag_permisos,pag_funcion, datos_adulto_responsable where 
+                    pag_usuario.per_id=datos_adulto_responsable.id_persona
                     and pag_permisos.func_id = pag_funcion.func_id
                     and pag_usuario.rol_id = pag_rol.rol_id
                     and pag_permisos.rol_id = pag_rol.rol_id

@@ -271,19 +271,6 @@ if(!isset($_FILES['registroCivilFile']) or  $_FILES['registroCivilFile'] == ""){
 if(!isset($_FILES['tarjetaIdentidadFile']) or  $_FILES['tarjetaIdentidadFile'] == ""){
     $errores[] = "El archivo <code>Tarjeta de identidad</code> es importante, por favor subelo.";
 }
-if(!isset($_FILES['carnetVacunacionFile']) or  $_FILES['carnetVacunacionFile'] == ""){
-    $errores[] = "El archivo <code>carnet vacunacion</code> es importante, por favor subelo.";
-}
-if(!isset($_FILES['carnetEPSFile']) or  $_FILES['carnetEPSFile'] == ""){
-    $errores[] = "El archivo <code>carnet EPS</code> es importante, por favor subelo.";
-}
-if(!isset($_FILES['certificadoVisualFile']) or  $_FILES['certificadoVisualFile'] == ""){
-    $errores[] = "El archivo <code>Certificado visual</code> es importante, por favor subelo.";
-}
-if(!isset($_FILES['certificadoAuditivoFile']) or  $_FILES['certificadoAuditivoFile'] == ""){
-    $errores[] = "El archivo <code>Certificado auditivo</code> es importante, por favor subelo.";
-}
-
 
 
 
@@ -344,19 +331,46 @@ if(!isset($_FILES['reciboPublicoFile']) or $_FILES['reciboPublicoFile'] == ""){
 
             $regsitro_civil = $_FILES['registroCivilFile']['name'];
             $tarjeta_indentidad = $_FILES['tarjetaIdentidadFile']['name'];
-            $carnet_vacunacion = $_FILES['carnetVacunacionFile']['name'];
-            $carnet_eps = $_FILES['carnetEPSFile']['name'];
+            
+            
 
             if(!isset($_FILES['certificadoMedicoFile']['name']) or $_FILES['certificadoMedicoFile']['name'] == ""){
-                                $certificado_medico = "No registra";
+                $certificado_medico = "No registra";
             }else{
                 $certificado_medico = $_FILES['certificadoMedicoFile']['name'];
             }
             
             
 
-            $certificado_visul = $_FILES['certificadoVisualFile']['name'];
-            $certificado_auditivo = $_FILES['certificadoAuditivoFile']['name'];
+            if(!isset($_FILES['carnetVacunacionFile']) or  $_FILES['carnetVacunacionFile'] == ""){
+                $carnet_vacunacion = "No registra";
+            }else{
+                $carnet_vacunacion = $_FILES['carnetVacunacionFile']['name'];
+            }
+
+            if(!isset($_FILES['carnetEPSFile']) or  $_FILES['carnetEPSFile'] == ""){
+                $carnet_eps = "No registra";
+            }else{
+                $carnet_eps = $_FILES['carnetEPSFile']['name'];
+            }
+
+            if(!isset($_FILES['certificadoVisualFile']) or  $_FILES['certificadoVisualFile'] == ""){
+                $certificado_visul = "No registra";
+            }else{
+                $certificado_visul = $_FILES['certificadoVisualFile']['name'];
+            }
+
+            if(!isset($_FILES['certificadoAuditivoFile']) or  $_FILES['certificadoAuditivoFile'] == ""){
+                $certificado_auditivo = "No registra";
+            }else{
+                $certificado_auditivo = $_FILES['certificadoAuditivoFile']['name'];
+            }
+
+
+
+
+            
+            
 
             if(!isset($_FILES['cartaLaboralPadreFile']['name']) or $_FILES['cartaLaboralPadreFile']['name'] == ""){
                 $carta_laboral_padre = "No registra";
@@ -2445,5 +2459,11 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
         echo getRespuestaAccion('listar');
 
     }
+
+
+    function matricula(){
+        
+    }
+
 
 }

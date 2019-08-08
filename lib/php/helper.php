@@ -334,3 +334,16 @@ function pag_opciones_true_false() {
 
     return $pag_opciones_true_false;
 }
+
+function modal_matricula(){
+    $objinicio = new sesionModel();
+
+    $per_id = $_SESSION['login'][0];
+
+    $sql = "SELECT * FROM modal_matricula, pag_matricula, alumnos_matriculados WHERE modal_matricula.id_matricula=pag_matricula.id_matricula AND pag_matricula.id_alumno=alumnos_matriculados.id_alumno AND alumnos_matriculados.id_adulto_responsable=$per_id";
+    $consulta = $objinicio->find($sql);
+
+    $objinicio->cerrar();
+
+    return $consulta;
+}

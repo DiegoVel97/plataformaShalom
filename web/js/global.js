@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
 
@@ -408,10 +409,10 @@ $(document).ready(function(){
     /* ================ FIN FORMULARIO SOLICITUD ========================= */
 
 
-
     $(".file-form").on('submit', function () {
         
-        $('.btn_submit_file').prop('disabled', false);
+        $('.btn_submit_file').prop('disabled', true);
+
         var url = $("#formularioRenovacionCupo").attr("data-action");
         var options = {
             url: url,
@@ -419,13 +420,9 @@ $(document).ready(function(){
 
                 var respuesta = $.parseJSON(response);
 
-                if (respuesta.accion === true) {
-                        
-Materialize.toast(respuesta.mensajes, 1500, 'rounded col green');
-
-                    setTimeout(window.location.href = "<?php echo addLib('index.php'); ?>", 4000);                    
-
-
+                if (respuesta.accion===true) {
+                    Materialize.toast(respuesta.mensajes, 1500, 'rounded col green');
+                    window.setTimeout("location.href='"+respuesta.redirect+"'", 1500);   
                 } else {
                     $('#cont_errors_ajax').html(respuesta.mensajes);
                     $('#cont_errors_ajax').css('display', 'block');
@@ -443,6 +440,7 @@ Materialize.toast(respuesta.mensajes, 1500, 'rounded col green');
 
     $(".file-form-solicitud").on('submit', function () {
         
+        $('.file-form-solicitud').prop('disabled', false);
 
         var url = $("#formularioSolicitudCupo").attr("data-action");
 
@@ -452,14 +450,13 @@ Materialize.toast(respuesta.mensajes, 1500, 'rounded col green');
                 
                 var respuesta = $.parseJSON(response);
 
-                if (respuesta.accion === true) {
-                    Materialize.toast(respuesta.mensajes, 1500, 'rounded col green');
-
-                    setTimeout(window.location.href = "<?php echo addLib('index.php'); ?>", 4000);
+                if (respuesta.accion===true) {
+                   setTimeout(function(){ Materialize.toast("NOOYA", 2500, 'rounded col green'); }, 1000);
+                   setTimeout(function(){ window.location.href = "../../"; }, 4000);
                 } else {
                     $('#cont_errors_ajax').html(respuesta.mensajes);
                     $('#cont_errors_ajax').css('display', 'block');
-
+                    $('.file-form-solicitud').prop('disabled', false);
                     $('html, body').animate({scrollTop: $('#cont_errors_ajax').position().top}, 'slow');
                 }
 

@@ -1,3 +1,26 @@
+<?php 
+
+if (isset(modal_matricula()['estado_modal_matricula']) AND modal_matricula()['estado_modal_matricula'] == "false"){ ?>
+    <div class="row" id="alert_box">
+ <div class="col s12 m12">
+  <div class="card red darken-1">
+   <div class="row">
+    <div class="col s12 m10">
+        <div class="card-content white-text">
+            <h5>
+                <b><code>IMPORTANTE!</code></b> Debe actualizar la matricula del estudiante haciendo click aqui -> 
+            </h5>
+          </div>
+      </div>
+      <div class="col s12 m2">
+        <i class="fa fa-times icon_style" id="alert_close" aria-hidden="true"></i>
+      </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+<?php }; ?>
 <!-- START CONTENT -->
 <section id="content">
 
@@ -14,9 +37,12 @@
 
                 <!-- //////////////////////////////////////////////////////////////////////////// -->
 
+<?php if ($_SESSION['login']['rol_nombre'] == "Padres") { ?>
+<?php }else{ ?>
                 <!--card stats start-->
                 <div id="card-stats">
                     <div class="row">
+
                         <div class="col s12 m6 l3">
                             <a class="card hoverable waves-block" href="<?php echo crearUrl('Programacion', 'programacion', 'listar') ?>">
                                 <div class="card-content  green white-text">
@@ -69,14 +95,14 @@
                 </div>
                 <!--card stats end-->
                 <!-- //////////////////////////////////////////////////////////////////////////// -->
-
+<?php } ?>
                 <div id="card-widgets">
                     <div class="row">
-
+<?php if ($_SESSION['login']['rol_nombre'] == "Padres") { ?>
                         <div class="col s12 m12 l7">
                             <ul id="task-card" class="collection with-header">
                                 <li class="collection-header cyan">
-                                    <h5 class="task-card-title"><b>SOLICITUD DE FORMULARIOS <code>NO ATENDIDAS</code> HASTA LA FECHA</b>
+                                    <h5 class="task-card-title"><b>CRONOGRAMAS DE ACTIVIDADES</b>
                                     </h5>
                                     <p class="task-card-date"><?php
                                         setlocale(LC_ALL, "es_ES");
@@ -90,13 +116,13 @@
                                     <thead>
                                         <tr>
                                             <th>
-                                                Fecha de creación
+                                                Fecha de inicio
                                             </th>
                                             <th>
-                                                Solicitante
+                                                Lugar
                                             </th>
                                             <th>
-                                                Equipo
+                                                Hora
                                             </th>
                                             <th>
                                                 Descripción
@@ -114,12 +140,12 @@
                                 </div>
                             </div>
                         </div>
-
+<?php } ?>
 
                         <div class="col s5">
                             <div id="profile-card" class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="<?php echo addLib('templates/adminMaterialize/images/user-bg.jpg') ?>" alt="user background">
+                                    <img class="activator" src="<?php echo addLib('img/user-bg.jpg') ?>" alt="user background">
                                 </div>
                                 <div class="card-content">
                                     <img src="<?php echo addLib('img/avatar/male1.png') ?>" alt="" class="circle responsive-img activator card-profile-image">
@@ -127,10 +153,10 @@
                                         <i class="mdi-action-account-circle"></i>
                                     </a>
                                     <br>
-                                    <span class="card-title activator grey-text text-darken-4"><?php echo $_SESSION['login']['per_nombre'] . "&nbsp;" . $_SESSION['login']['per_apellido'] ?></span>
-                                    <p><i class="mdi-action-perm-identity cyan-text text-darken-2"></i>&nbsp;<?php echo $_SESSION['login']['per_tipo'] ?></p>
-                                    <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> <?php echo $_SESSION['login']['per_movil'] ?></p>
-                                    <p><i class="mdi-communication-email cyan-text text-darken-2"></i> <?php echo $_SESSION['login']['per_email'] ?></p>
+                                    <span class="card-title activator grey-text text-darken-4"><?php echo $_SESSION['login']['nombres_apellidos']; ?></span>
+                                    <p><i class="mdi-action-perm-identity cyan-text text-darken-2"></i>&nbsp;<?php echo $_SESSION['login']['per_tipo']; ?></p>
+                                    <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> <?php echo $_SESSION['login']['numero_celular'] ?></p>
+                                    <p><i class="mdi-communication-email cyan-text text-darken-2"></i> <?php echo $_SESSION['login']['correo_persona'] ?></p>
 
                                 </div>
                                 <div class="card-reveal">

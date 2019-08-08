@@ -29,7 +29,7 @@
                                 <li><a href="<?php echo crearUrl('Sesion', 'sesion', 'cerrarSesion') ?>"><i class="mdi-hardware-keyboard-tab"></i> Salir</a>
                                 </li>
                             </ul>
-                            <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown"><?php echo $_SESSION['login']['per_nombre'] . " " . $_SESSION['login']['per_apellido']; ?><i class="mdi-navigation-arrow-drop-down right"></i></a>
+                            <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown"><?php echo $_SESSION['login']['nombres_apellidos'] . " " . $_SESSION['login']['per_apellido']; ?><i class="mdi-navigation-arrow-drop-down right"></i></a>
                             <p class="user-roal"><?php echo $_SESSION['login']['rol_nombre'] ?></p>
                         </div>
                     </div>

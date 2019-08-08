@@ -60,7 +60,7 @@
   -moz-box-shadow: 2px 3px 70px 2px rgba(255,255,255,1);
   box-shadow: 2px 3px 70px 2px rgba(255,255,255,1); ">
   <br><br>
-  <button class="btn teal" id="closeVistaPrevia">CERRAR VISTA PREVIA</button>
+  <button class="btn teal" id="closeVistaPrevia" style="position: fixed; z-index: 999999;">CERRAR VISTA PREVIA</button>
 </div>
 
 <body>

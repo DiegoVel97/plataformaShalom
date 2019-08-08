@@ -83,7 +83,35 @@
                                         <td>
                                             <?php echo $formulario[38]; ?>
                                         </td>
+                                        <?php if ($formulario['estado_matricula'] == 'Rechazado'){ ?> 
+
+                                                <td>
+                                            <a class="btn-floating modal-trigger waves-effect waves-light teal editarFormularioRenovacion disabled" 
+                                       href="#editarFormularioRenovacion" data-url="<?php echo crearUrl('Matricula', 'formulario', 'editar', array('noVista' => "noVista", 'id' => $formulario['id_alumno'])) ?>">
+                                                <i class="mdi-content-create small"></i>
+                                            </a>
+                                        </td>   
                                         <td>
+                                            <a class="btn-floating modal-trigger  waves-effect waves-light teal verDetalleFormRenovacion" href="#detalleFormulario" data-url="<?php echo crearUrl('Matricula', 'formulario', 'verDetalle', array('noVista' => "noVista", 'id' => $formulario['id_alumno'])) ?>">
+                                                <i class="mdi-action-find-in-page tiny"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a class="btn-floating waves-effect modal-matricular waves-light teel darken-1 disabled" data-id="<?php echo $formulario['id_alumno']; ?>" 
+                                               data-url="<?php echo crearUrl('Matricula', 'formulario', 'matricularAlumno', array('noVista' => "noVista", 'id' => $formulario['id_alumno'])) ?>">
+                                                <i class="small mdi-action-done"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a class="btn-floating waves-effect modal-matricular-rechazar waves-light red darken-1 disabled" data-id="<?php echo $formulario['id_alumno']; ?>" 
+                                               data-url="<?php echo crearUrl('Matricula', 'formulario', 'pararMatriculaAlumno', array('noVista' => "noVista", 'id' => $formulario['id_alumno'])) ?>">
+                                                <i class="small mdi-navigation-close"></i>
+                                            </a>
+                                        </td>
+
+                                        <?php }else{ ?> 
+
+                                            <td>
                                             <a class="btn-floating modal-trigger waves-effect waves-light teal editarFormularioRenovacion" 
                                        href="#editarFormularioRenovacion" data-url="<?php echo crearUrl('Matricula', 'formulario', 'editar', array('noVista' => "noVista", 'id' => $formulario['id_alumno'])) ?>">
                                                 <i class="mdi-content-create small"></i>
@@ -95,15 +123,21 @@
                                             </a>
                                         </td>
                                         <td>
-                                            <a title="Aprobar renovacion" class="btn-floating waves-effect teel darken-1" href="#">
-                                               <i class="small mdi-action-done"></i>
+                                            <a class="btn-floating waves-effect modal-matricular waves-light teel darken-1" data-id="<?php echo $formulario['id_alumno']; ?>" 
+                                               data-url="<?php echo crearUrl('Matricula', 'formulario', 'matricularAlumno', array('noVista' => "noVista", 'id' => $formulario['id_alumno'])) ?>">
+                                                <i class="small mdi-action-done"></i>
                                             </a>
                                         </td>
                                         <td>
-                                            <a title="Rechazar renovacion" class="btn-floating waves-effect red darken-1" href="#">
-                                               <i class="small mdi-navigation-close"></i>
+                                            <a class="btn-floating waves-effect modal-matricular-rechazar waves-light red darken-1" data-id="<?php echo $formulario['id_alumno']; ?>" 
+                                               data-url="<?php echo crearUrl('Matricula', 'formulario', 'pararMatriculaAlumno', array('noVista' => "noVista", 'id' => $formulario['id_alumno'])) ?>">
+                                                <i class="small mdi-navigation-close"></i>
                                             </a>
                                         </td>
+
+
+                                        <?php } ?>
+                                        
                                     </tr>
                                 <?php } ?>
                             </tbody>

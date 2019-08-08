@@ -623,7 +623,9 @@ ul.side-nav.leftside-navigation li a {
 }
 
 ul.side-nav.leftside-navigation li.user-details {
-  background: url("../../img/logo/logo_nuevo_shalom.png") no-repeat center center;
+  /*
+  background: url("../../img/logo/logo_nuevo_shalom.png") no-repeat center center;*/
+  background-color: #009688;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

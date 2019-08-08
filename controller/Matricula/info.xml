@@ -29,5 +29,22 @@
             </funciones>
         </controlador>
         
+        <controlador>
+            <nombre>matriculaController</nombre>
+            <icono>mdi-action-view-quilt</icono>
+            <display>Matricula</display>
+            <descripcion>Renovacion</descripcion>
+            
+            <funciones>
+                
+                <funcion>
+                    <nombre>matricula</nombre>
+                    <display>Ver matricula</display>
+                    <descripcion>Ver Matricula</descripcion>
+                </funcion>
+
+            </funciones>
+        </controlador>
+
     </controladores>
 </modulos>

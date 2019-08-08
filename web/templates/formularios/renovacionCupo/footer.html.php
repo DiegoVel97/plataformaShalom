@@ -3,7 +3,17 @@
     ================================================ -->
 
   <!-- jQuery Library -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+        format: 'yyyy-mm-dd'
+    });
+});
+  Materialize.updateTextFields();
 
+</script>
   <script type="text/javascript" src="<?php echo addLib('templates/js/plugins/jquery-1.11.2.min.js')?>"></script>
   <script type="text/javascript" src="<?php echo addLib('js/jquery.form.js')?>"></script>
   <script type="text/javascript" src="<?php echo addLib('templates/js/materialize.js')?>"></script>
