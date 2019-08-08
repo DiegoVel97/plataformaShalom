@@ -268,9 +268,7 @@ if(!isset($_POST['ocupacionalActualAdultoResponsable']) or $_POST['ocupacionalAc
 if(!isset($_FILES['registroCivilFile']) or  $_FILES['registroCivilFile'] == ""){
     $errores[] = "El archivo <code>Registro civil</code> es importante, por favor subelo.";
 }
-if(!isset($_FILES['tarjetaIdentidadFile']) or  $_FILES['tarjetaIdentidadFile'] == ""){
-    $errores[] = "El archivo <code>Tarjeta de identidad</code> es importante, por favor subelo.";
-}
+
 
 
 
@@ -330,7 +328,14 @@ if(!isset($_FILES['reciboPublicoFile']) or $_FILES['reciboPublicoFile'] == ""){
             
 
             $regsitro_civil = $_FILES['registroCivilFile']['name'];
-            $tarjeta_indentidad = $_FILES['tarjetaIdentidadFile']['name'];
+
+            if(!isset($_FILES['tarjetaIdentidadFile']) or  $_FILES['tarjetaIdentidadFile'] == ""){
+                $tarjeta_indentidad = "No regista";
+            }else{
+                $tarjeta_indentidad = $_FILES['tarjetaIdentidadFile']['name'];
+            }
+
+            
             
             
 
@@ -717,103 +722,117 @@ $ocupacion_actual_masculino = $_POST['ocupacionalActualAcudienteMen'];
             /* =================== ADJUNTAR DOCUMENTACI&Oacute;N ALUMNO / ADJUNTAR DOCUMENTACION ============== */
 
             $carpeta = getDocumentRoot() . "/web/documentos/alumnos/" .$numero_documento_alumno;
-            
+
             if (!file_exists($carpeta)) {
                 mkdir($carpeta, 0777, true);
             }
 
+            if(isset($_FILES['registroCivilFile']['name'])){
 
+                    $registroCivilFile = $_FILES['registroCivilFile']['name'];
+                    $TMP_NAME_registroCivilFile = $_FILES['registroCivilFile']['tmp_name'];
+                    $ruta_registroCivilFile = $carpeta."/registro_civil-".$registroCivilFile;
 
-            
-            $registroCivilFile = $_FILES['registroCivilFile']['name'];
-            $TMP_NAME_registroCivilFile = $_FILES['registroCivilFile']['tmp_name'];
-            $ruta_registroCivilFile = $carpeta."/registro_civil-".$registroCivilFile;
-
-            if ($carpeta <> "") {
-                if (move_uploaded_file($TMP_NAME_registroCivilFile, $ruta_registroCivilFile)) {
-                }
-            } else {
-                
-            }
-            
-
-
-
-            $tarjetaIdentidadFile = $_FILES['tarjetaIdentidadFile']['name'];
-            $TMP_NAME_tarjetaIdentidadFile = $_FILES['tarjetaIdentidadFile']['tmp_name'];
-            $ruta_tarjetaIdentidadFile = $carpeta."/tarjeta_identidad-".$tarjetaIdentidadFile;
-
-            if ($carpeta <> "") {
-                if (move_uploaded_file($TMP_NAME_tarjetaIdentidadFile, $ruta_tarjetaIdentidadFile)) {
-                }
-            } else {
-                
-            }
-
-            
-            $carnetVacunacionFile = $_FILES['carnetVacunacionFile']['name'];
-            $TMP_NAME_carnetVacunacionFile = $_FILES['carnetVacunacionFile']['tmp_name'];
-            $ruta_carnetVacunacionFile = $carpeta."/carnet_vacunacion-".$carnetVacunacionFile;
-
-            if ($carpeta <> "") {
-                if (move_uploaded_file($TMP_NAME_carnetVacunacionFile, $ruta_carnetVacunacionFile)) {
-                }
-            } else {
-                
+                    if ($carpeta <> "") {
+                        if (move_uploaded_file($TMP_NAME_registroCivilFile, $ruta_registroCivilFile)) {
+                        }
+                    } else {
+                        
+                    }
             }
 
 
             
-            $carnetEPSFile = $_FILES['carnetEPSFile']['name'];
-            $TMP_NAME_carnetEPSFile = $_FILES['carnetEPSFile']['tmp_name'];
-            $ruta_carnetEPSFile = $carpeta."/carnet_EPS-".$carnetEPSFile;
-
-            if ($carpeta <> "") {
-                if (move_uploaded_file($TMP_NAME_carnetEPSFile, $ruta_carnetEPSFile)) {
-                }
-            } else {
-                
-            }
-            
-            if(isset($_FILES['certificadoMedicoFile']['name'])){
-
-                $certificadoMedicoFile = $_FILES['certificadoMedicoFile']['name'];
-                $TMP_NAME_certificadoMedicoFile = $_FILES['certificadoMedicoFile']['tmp_name'];
-                $ruta_certificadoMedicoFile = $carpeta."/certificado_medico-".$certificadoMedicoFile;
+            if(isset($_FILES['tarjetaIdentidadFile']['name'])){
+                $tarjetaIdentidadFile = $_FILES['tarjetaIdentidadFile']['name'];
+                $TMP_NAME_tarjetaIdentidadFile = $_FILES['tarjetaIdentidadFile']['tmp_name'];
+                $ruta_tarjetaIdentidadFile = $carpeta."/tarjeta_identidad-".$tarjetaIdentidadFile;
 
                 if ($carpeta <> "") {
-                    if (move_uploaded_file($TMP_NAME_certificadoMedicoFile, $ruta_certificadoMedicoFile)) {
+                    if (move_uploaded_file($TMP_NAME_tarjetaIdentidadFile, $ruta_tarjetaIdentidadFile)) {
                     }
                 } else {
                     
                 }
 
-            }else{
-
             }
 
-
-            $certificadoVisualFile = $_FILES['certificadoVisualFile']['name'];
-            $TMP_NAME_certificadoVisualFile = $_FILES['certificadoVisualFile']['tmp_name'];
-            $ruta_certificadoVisualFile = $carpeta."/certificado_visual-".$certificadoVisualFile;
-
-            if ($carpeta <> "") {
-                if (move_uploaded_file($TMP_NAME_certificadoVisualFile, $ruta_certificadoVisualFile)) {
-                }
-            } else {
+            if(isset($_FILES['carnetVacunacionFile']['name'])){
                 
+                $carnetVacunacionFile = $_FILES['carnetVacunacionFile']['name'];
+                $TMP_NAME_carnetVacunacionFile = $_FILES['carnetVacunacionFile']['tmp_name'];
+                $ruta_carnetVacunacionFile = $carpeta."/carnet_vacunacion-".$carnetVacunacionFile;
+
+                if ($carpeta <> "") {
+                    if (move_uploaded_file($TMP_NAME_carnetVacunacionFile, $ruta_carnetVacunacionFile)) {
+                    }
+                } else {
+                    
+                }
             }
+
+
+
+            if(isset($_FILES['carnetEPSFile']['name'])){
+                $carnetEPSFile = $_FILES['carnetEPSFile']['name'];
+                $TMP_NAME_carnetEPSFile = $_FILES['carnetEPSFile']['tmp_name'];
+                $ruta_carnetEPSFile = $carpeta."/carnet_EPS-".$carnetEPSFile;
+
+                if ($carpeta <> "") {
+                    if (move_uploaded_file($TMP_NAME_carnetEPSFile, $ruta_carnetEPSFile)) {
+                    }
+                } else {
+                    
+                }
+                
+                if(isset($_FILES['certificadoMedicoFile']['name'])){
+
+                    $certificadoMedicoFile = $_FILES['certificadoMedicoFile']['name'];
+                    $TMP_NAME_certificadoMedicoFile = $_FILES['certificadoMedicoFile']['tmp_name'];
+                    $ruta_certificadoMedicoFile = $carpeta."/certificado_medico-".$certificadoMedicoFile;
+
+                    if ($carpeta <> "") {
+                        if (move_uploaded_file($TMP_NAME_certificadoMedicoFile, $ruta_certificadoMedicoFile)) {
+                        }
+                    } else {
+                        
+                    }
+
+                }else{
+
+                }
+            }
+
+
             
-            $certificadoAuditivoFile = $_FILES['certificadoAuditivoFile']['name'];
-            $TMP_NAME_certificadoAuditivoFile = $_FILES['certificadoAuditivoFile']['tmp_name'];
-            $ruta_certificadoAuditivoFile = $carpeta."/certificado_auditivo-".$certificadoAuditivoFile;
+            if(isset($_FILES['certificadoVisualFile']['name'])){
+                $certificadoVisualFile = $_FILES['certificadoVisualFile']['name'];
+                $TMP_NAME_certificadoVisualFile = $_FILES['certificadoVisualFile']['tmp_name'];
+                $ruta_certificadoVisualFile = $carpeta."/certificado_visual-".$certificadoVisualFile;
 
-            if ($carpeta <> "") {
-                if (move_uploaded_file($TMP_NAME_certificadoAuditivoFile, $ruta_certificadoAuditivoFile)) {
+                if ($carpeta <> "") {
+                    if (move_uploaded_file($TMP_NAME_certificadoVisualFile, $ruta_certificadoVisualFile)) {
+                    }
+                } else {
+                    
                 }
-            } else {
-                
             }
+
+            if(isset($_FILES['certificadoAuditivoFile']['name'])){
+                $certificadoAuditivoFile = $_FILES['certificadoAuditivoFile']['name'];
+                $TMP_NAME_certificadoAuditivoFile = $_FILES['certificadoAuditivoFile']['tmp_name'];
+                $ruta_certificadoAuditivoFile = $carpeta."/certificado_auditivo-".$certificadoAuditivoFile;
+
+                if ($carpeta <> "") {
+                    if (move_uploaded_file($TMP_NAME_certificadoAuditivoFile, $ruta_certificadoAuditivoFile)) {
+                    }
+                } else {
+                    
+                }
+            }
+
+
+            
 
 
 

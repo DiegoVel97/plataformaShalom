@@ -417,12 +417,11 @@ $(document).ready(function(){
         var options = {
             url: url,
             success: function (response) {
-
+               
                 var respuesta = $.parseJSON(response);
-
                 if (respuesta.accion===true) {
-                    Materialize.toast(respuesta.mensajes, 1500, 'rounded col green');
-                    window.setTimeout("location.href='"+respuesta.redirect+"'", 1500);   
+                    Materialize.toast(respuesta.mensajes, 3500, 'rounded col green');
+                    window.setTimeout("location.href='"+respuesta.redirect+"'", 4500);   
                 } else {
                     $('#cont_errors_ajax').html(respuesta.mensajes);
                     $('#cont_errors_ajax').css('display', 'block');

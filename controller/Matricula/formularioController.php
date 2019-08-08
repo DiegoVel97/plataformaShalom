@@ -6,13 +6,13 @@ require_once("../lib/correo/src/PHPMailer.php");
 require_once("../lib/correo/src/SMTP.php");
 
 class formularioController {
-	
+  
     function listadoRenovacion(){
         $objFormulario = new matriculaModel();
 
 /*"SELECT * FROM datos_alumno, datos_acudiente, datos_adulto_responsable, documentacion, formulario_renovacion WHERE datos_alumno.id_acudiente=datos_acudiente.id_persona AND datos_alumno.id_adulto_responsable=datos_adulto_responsable.id_persona AND datos_alumno.id_documentos=documentacion.id_documento AND datos_acudiente.id_documentacion_indpendiente=documentacion_independiente.id_documentacion_indpendiente AND datos_adulto_responsable.id_documentacion_indpendiente=documentacion_independiente.id_documentacion_indpendiente AND formulario_renovacion.id_alumno=datos_alumno.id_alumno";*/
 
-	$query =  "SELECT *,datos_acudiente_masculino.nombres_apellidos AS nombre_masculino, datos_acudiente_masculino.estrato_social AS estratoSocialMasculino,
+  $query =  "SELECT *,datos_acudiente_masculino.nombres_apellidos AS nombre_masculino, datos_acudiente_masculino.estrato_social AS estratoSocialMasculino,
            datos_acudiente_masculino.telefono_residencia AS telefonoMasculino,
            datos_acudiente_masculino.telefono_oficina_actual AS telefonoOficinaMasculino,
            datos_acudiente_masculino.numero_celular AS celularMasculino,
@@ -32,12 +32,12 @@ class formularioController {
             datos_alumno.ha_recibido_terapia_de=pag_terapia.id_terapia AND
             datos_alumno.presenta_discapacidad=pag_discapacidad_medica.id_discapacidad_medica AND
             datos_alumno.id_acudiente_masculino=datos_acudiente_masculino.id_persona_masculina AND datos_alumno.id_acudiente_femenino=datos_acudiente_femenino.id_persona_femenino AND datos_alumno.id_adulto_responsable=datos_adulto_responsable.id_persona AND datos_alumno.id_documentos=documentacion.id_documento AND formulario_renovacion.id_alumno=datos_alumno.id_alumno";
-		$consultaFormularios = $objFormulario->select($query);
+    $consultaFormularios = $objFormulario->select($query);
 
 
 
 
-		  //aqui empieza el paginado       
+      //aqui empieza el paginado       
         $pagina = (isset($_REQUEST['pagina']) ? $_REQUEST['pagina'] : 1);
         $url = crearUrl('formulario', 'listadoRenovacion', 'listar');
 
@@ -45,9 +45,9 @@ class formularioController {
         
         $consultaFormularios = $paginado->getDatos();
 
-		$objFormulario->cerrar();
+    $objFormulario->cerrar();
 
-		include_once('../view/Matricula/Formulario/Renovacion/consulta.html.php');
+    include_once('../view/Matricula/Formulario/Renovacion/consulta.html.php');
     }
 
     function verDetalle($parametros = false){
@@ -477,8 +477,6 @@ formulario_solicitud.eps_alumno=pag_eps.id_eps AND formulario_solicitud.id_acudi
       $insercion_usuario = "INSERT INTO pag_usuario (per_id, usu_usuario, usu_clave, usu_estado, rol_id) VALUES('$per_id', '$usu_usuario', '$usu_clave', 'activo', '2')";
       $insercion_tabla_usuario = $objFormulario->find($insercion_usuario);
 
-      $sql_eliminar = "DELETE FROM datos_alumno WHERE id_alumno = $numero_documento_alumno";
-      $eliminar = $objFormulario->delete($sql_eliminar);
 
           /* ENVIO FORMULARIO */
 
@@ -513,7 +511,7 @@ formulario_solicitud.eps_alumno=pag_eps.id_eps AND formulario_solicitud.id_acudi
               // Content
               $mail->isHTML(true);                                  // Set email format to HTML
               $mail->Subject = 'Usuario y contrase&ntilde;a - Centro Educativo Shalom';
-              $mail->Body    = '<h1>Bienvenidos al centro educativo Shalom</h1> A continuacion se les dara acceso a la plataforma para que observen y terminen el proceso de matricula de su alumno <b>Usuario:</b>'.$usu_usuario.' <b>Contraseña:</b>'.$per_id;
+              $mail->Body    = '<h1>Bienvenidos al centro educativo Shalom</h1> A continuacion se les dara acceso a la plataforma para que observen y terminen el proceso de matricula de su alumno <b>Usuario:</b>'.$usu_usuario.' <b>Contrase単a:</b>'.$per_id;
               $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
               $mail->send();
